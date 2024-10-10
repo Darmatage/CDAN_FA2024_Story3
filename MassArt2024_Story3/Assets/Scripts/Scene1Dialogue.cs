@@ -67,44 +67,44 @@ public class Scene1Dialogue : MonoBehaviour
         {
             ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Wakey wakey, human.";
+            Char1name.text = "You";
+            Char1speech.text = "*You were called into your boss’s office.*";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "Wuh..? What happened?";
+            Char1speech.text = "*It's your first day on the job as a monster hunter, so naturally you're kind of nervous.";
             Char2name.text = "";
             Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "I know I did not hit you that hard.";
-        }
-        else if (primeInt == 5)
-        {
-            Char1name.text = "YOU";
-            Char1speech.text = "Hit me? Why?";
+            Char1name.text = "You";
+            Char1speech.text = "You wanted to see me Boss?";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 6)
+        else if (primeInt == 5)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
+            Char2name.text = "Boss";
+            Char2speech.text = "Yes, I have an assignment for you.";
+        }
+        else if (primeInt == 6)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Already?";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 7)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "Why do you think I know anything?";
+            Char1speech.text = "I mean- if it's not presumtous of me. I just started!";
             Char2name.text = "";
             Char2speech.text = "";
         }
