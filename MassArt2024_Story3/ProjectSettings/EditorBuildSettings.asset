@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneLose.unity
     guid: 31b582cf7c4ae479a8ae78e95c53900a
   - enabled: 1
+    path: Assets/Scenes/SceneLose_LianhuaDeath.unity
+    guid: edc330ad244da7546a899eb690e8c46d
+  - enabled: 1
+    path: Assets/Scenes/SceneLose_LianhuaRomance.unity
+    guid: c41fc48eb22a9954c8b1d10efd68f414
+  - enabled: 1
     path: Assets/Scenes/SceneWin.unity
     guid: 97102cee5db764bc8aebe9806b9017f2
   - enabled: 1
@@ -23,4 +29,28 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene2a.unity
     guid: 3cfdd8ec1392a4ecc8cc3bed2d984ee9
+  - enabled: 1
+    path: Assets/Scenes/Scene2b.unity
+    guid: b16b827759fb06e4083957e2346f51ef
+  - enabled: 1
+    path: Assets/Scenes/Scene2C.unity
+    guid: 042e23876b924384fb2a1d6a6b6356d6
+  - enabled: 1
+    path: Assets/Scenes/Scene3a.unity
+    guid: d3f7b50ddc7744b8c80e014985c8131f
+  - enabled: 1
+    path: Assets/Scenes/Scene3b.unity
+    guid: 5903cfc6d1a1ce94386c526577842f34
+  - enabled: 1
+    path: Assets/Scenes/Scene3c.unity
+    guid: 98a9fd1d9e43f3148b665fd04b2ccd22
+  - enabled: 1
+    path: Assets/Scenes/Scene4a.unity
+    guid: df5daedb09e43471da2f5261d05090fb
+  - enabled: 1
+    path: Assets/Scenes/Scene4b.unity
+    guid: b9c6dd215cb0ba04cb291b33dd7f5198
+  - enabled: 1
+    path: Assets/Scenes/Scene5.unity
+    guid: f429016f894ea394e99174dbb8dbca4a
   m_configObjects: {}
