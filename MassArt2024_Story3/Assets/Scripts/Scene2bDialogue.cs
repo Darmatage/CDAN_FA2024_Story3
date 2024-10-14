@@ -18,9 +18,15 @@ public class Scene2bDialogue : MonoBehaviour
     //public TMP_Text Char3name;
     //public TMP_Text Char3speech;
     public GameObject DialogueDisplay;
+
     public GameObject ArtChar1a;
     public GameObject ArtChar1b;
     public GameObject ArtChar1c;
+	public GameObject ArtChar1d;
+    public GameObject ArtChar1e;
+    public GameObject ArtChar1f;
+	public GameObject ArtChar1g;
+
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
