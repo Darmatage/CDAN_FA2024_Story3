@@ -19,7 +19,10 @@ public class Scene2aDialogue : MonoBehaviour
     //public TMP_Text Char3speech;
     public GameObject DialogueDisplay;
     public GameObject ArtChar1a;
-    //public GameObject ArtChar1b;
+    public GameObject ArtChar1b;
+    public GameObject ArtChar1c;
+    public GameObject ArtChar1d;
+    public GameObject ArtChar1e;
     //public GameObject ArtChar2;
     public GameObject ArtBG1;
     public GameObject Choice1a;
@@ -35,6 +38,10 @@ public class Scene2aDialogue : MonoBehaviour
     {
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
+        ArtChar1b.SetActive(false);
+        ArtChar1c.SetActive(false);
+        ArtChar1d.SetActive(false);
+        ArtChar1e.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -65,46 +72,48 @@ public class Scene2aDialogue : MonoBehaviour
         }
         else if (primeInt == 2)
         {
-            ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
             Char1name.text = "You";
-            Char1speech.text = "*You were called into your boss’s office.*";
+            Char1speech.text = "I gotta stay focused. The targert supposedly works here...";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "*It's your first day on the job as a monster hunter, so naturally you're kind of nervous.";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "*whistling*";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
         {
+            ArtChar1a.SetActive(true);
             Char1name.text = "You";
-            Char1speech.text = "You wanted to see me Boss?";
+            Char1speech.text = "Oh- uh...";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 5)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Yes, I have an assignment for you.";
+            Char1name.text = "You";
+            Char1speech.text = "Hello?";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 6)
         {
-            Char1name.text = "You";
-            Char1speech.text = "Already?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "AGH!";
         }
         else if (primeInt == 7)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "I mean- if it's not presumtous of me. I just started!";
+            Char1speech.text = "Oh- your um- your...eyes fell...uh nevermind.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -112,9 +121,31 @@ public class Scene2aDialogue : MonoBehaviour
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Do not play the stupid. You will take me to him.";
-            // Turn off the "Next" button, turn on "Choice" buttons
+            Char2name.text = "Joey";
+            Char2speech.text = "Sorry about that! You sure gave me a spook there!";
+        }
+        else if (primeInt == 9)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Sorry! I didn't mean to sneak up on you like that!";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 10)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "No worries man! As a janitor, after-hours freaky figures tend to be the ushe.";
+        }
+        else if (primeInt == 11)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "What can I do for ya?";
+        
+     // Turn off the "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
             allowSpace = false;
             Choice1a.SetActive(true); // function Choice1aFunct()
