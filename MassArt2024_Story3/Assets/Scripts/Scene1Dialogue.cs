@@ -267,10 +267,10 @@ else if (primeInt == 41)
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("Scene1b");
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("Scene1b");
     }
 }
