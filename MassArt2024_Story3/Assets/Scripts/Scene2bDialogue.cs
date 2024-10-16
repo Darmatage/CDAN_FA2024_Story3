@@ -257,24 +257,24 @@ else if (primeInt == 9)
         {
 			ArtChar1c.SetActive(false);
 			ArtChar1a.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Whatever.";
+            Char1name.text = "YOU";
+            Char1speech.text = "...";
+            Char2name.text = "";
+            Char2speech.text = ".";
         }
 else if (primeInt == 41)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Here are your files.";
+            Char1name.text = "YOU";
+            Char1speech.text = "[Ah man! that was horrible!]";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
 		else if (primeInt == 42)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Choose one to start off with.";
+            Char1name.text = "YOU";
+            Char1speech.text = "[Maybe I should quit while I still have some dignity left...]";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
 		else if (primeInt == 43)
         {
