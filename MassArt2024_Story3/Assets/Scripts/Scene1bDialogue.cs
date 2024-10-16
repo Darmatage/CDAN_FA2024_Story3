@@ -40,9 +40,9 @@ public class Scene1bDialogue : MonoBehaviour
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
-        NextScene1Button.SetActive(false);
-        NextScene2Button.SetActive(false);
-        nextButton.SetActive(true);
+        NextScene1Button.SetActive(true);
+        NextScene2Button.SetActive(true);
+        nextButton.SetActive(false);
     }
 
     // Use the spacebar as a faster "Next" button:
