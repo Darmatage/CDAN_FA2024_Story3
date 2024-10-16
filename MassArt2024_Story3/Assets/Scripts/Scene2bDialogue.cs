@@ -149,7 +149,7 @@ else if (primeInt == 9)
         else if (primeInt == 11)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "Alright then...";
+            Char1speech.text = "Alright then... Um...";
             Char2name.text = "";
             Char2speech.text = "";
             // Turn off the "Next" button, turn on "Choice" buttons
