@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene1aDialogue : MonoBehaviour
+public class Scene1Dialogue : MonoBehaviour
 {
     // These are the script variables.
     // For more character images / buttons, copy & renumber the variables:
@@ -271,6 +271,6 @@ else if (primeInt == 41)
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("Scene2a");
     }
 }
