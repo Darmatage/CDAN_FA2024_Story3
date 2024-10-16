@@ -1418,13 +1418,13 @@ MonoBehaviour:
   Char2name: {fileID: 7443561753699694279}
   Char2speech: {fileID: 7443561753699694278}
   DialogueDisplay: {fileID: 7443561753699694277}
-  ArtChar1a: {fileID: 0}
-  ArtChar1b: {fileID: 0}
-  ArtChar1c: {fileID: 0}
-  ArtChar1d: {fileID: 0}
-  ArtChar1e: {fileID: 0}
-  ArtChar1f: {fileID: 0}
-  ArtChar1g: {fileID: 0}
+  ArtChar1a: {fileID: 983812917}
+  ArtChar1b: {fileID: 1564048295}
+  ArtChar1c: {fileID: 1710731560}
+  ArtChar1d: {fileID: 1240147260}
+  ArtChar1e: {fileID: 1834131877}
+  ArtChar1f: {fileID: 766687361}
+  ArtChar1g: {fileID: 1214025092}
   ArtBG1: {fileID: 0}
   Choice1a: {fileID: 898985288417711179}
   Choice1b: {fileID: 665671181}
