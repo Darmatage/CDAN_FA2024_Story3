@@ -298,7 +298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_text
-      value: scene change 2
+      value: Go meet Joey at Skate Park
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1084,7 +1084,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_text
-      value: I was looking for you!
+      value: I had a good time!
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_fontSize
@@ -1112,11 +1112,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Choice1bFunct
+      value: Choice2bFunct
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene1Dialogue, Assembly-CSharp
+      value: Scene2aDialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1138,6 +1138,11 @@ PrefabInstance:
 --- !u!224 &986603853 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 477606828646772249, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
+  m_PrefabInstance: {fileID: 986603852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &986603854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4591806115752110980, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
   m_PrefabInstance: {fileID: 986603852}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1037853556
@@ -1468,12 +1473,12 @@ RectTransform:
   - {fileID: 5305113298704885456}
   - {fileID: 240619700}
   - {fileID: 665671180}
+  - {fileID: 1428387579}
+  - {fileID: 986603853}
   - {fileID: 1182033704}
   - {fileID: 255086446}
   - {fileID: 8930560352584594789}
   - {fileID: 347133034}
-  - {fileID: 1428387579}
-  - {fileID: 986603853}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1508,6 +1513,8 @@ MonoBehaviour:
   ArtBG1: {fileID: 39016726}
   Choice1a: {fileID: 898985288417711179}
   Choice1b: {fileID: 665671181}
+  Choice2a: {fileID: 1428387580}
+  Choice2b: {fileID: 986603854}
   NextScene1Button: {fileID: 1182033705}
   NextScene2Button: {fileID: 255086447}
   nextButton: {fileID: 5305113298704885457}
@@ -1661,7 +1668,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 477606828646772249, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 146
+      value: -371
       objectReference: {fileID: 0}
     - target: {fileID: 477606828646772249, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1681,7 +1688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_text
-      value: I was looking for you!
+      value: I gave you my number?
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_fontSize
@@ -1709,11 +1716,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Choice1bFunct
+      value: Choice2aFunt
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Scene1Dialogue, Assembly-CSharp
+      value: Scene2aDialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1735,6 +1742,11 @@ PrefabInstance:
 --- !u!224 &1428387579 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 477606828646772249, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
+  m_PrefabInstance: {fileID: 1428387578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1428387580 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4591806115752110980, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
   m_PrefabInstance: {fileID: 1428387578}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1507452707
