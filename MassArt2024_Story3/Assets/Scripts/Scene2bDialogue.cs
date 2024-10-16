@@ -43,6 +43,11 @@ public class Scene2bDialogue : MonoBehaviour
         ArtChar1a.SetActive(false);
 		ArtChar1b.SetActive(false);
 		ArtChar1c.SetActive(false);
+		ArtChar1d.SetActive(false);
+		ArtChar1e.SetActive(false);
+		ArtChar1f.SetActive(false);
+		ArtChar1g.SetActive(false);
+
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -77,14 +82,14 @@ public class Scene2bDialogue : MonoBehaviour
             
             DialogueDisplay.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "Whew. First day. I'm nervous.";
+            Char1speech.text = "Alright, this should be the place.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "At least I won't have to hunt monsters on my first day!";
+            Char1speech.text = "Man it's really crowded. I can barely even hear myself think!";
             Char2name.text = "";
             Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
@@ -92,73 +97,59 @@ public class Scene2bDialogue : MonoBehaviour
         else if (primeInt == 4)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "You wanted to see me Boss?";
+            Char1speech.text = "At least the music is good...";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 5)
         {
-			ArtChar1a.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Yes, I have an assignment for you.";
+			ArtChar1e.SetActive(true);
+            Char1name.text = "YOU";
+            Char1speech.text = "Wait a minute... That's my target!";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 6)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "Already?";
+            Char1speech.text = "Ok, ok. Act cool.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 7)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "I mean- if it's not presumtous of me. I just started!";
+            Char1speech.text = "Just approach the bar like a normal person!";
             Char2name.text = "";
             Char2speech.text = "";
         }
 else if (primeInt == 8)
         {
+            ArtChar1e.SetActive(false);
+			ArtChar1a.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "Shouldn't I be doing some grunt work or some training before taking on a case?";
+            Char1speech.text = "Hi, is this seat taken?";
             Char2name.text = "";
             Char2speech.text = "";
         }
 else if (primeInt == 9)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "Maybe shadow someone even...?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "LIANHUA";
+            Char2speech.text = "Hm?";
         }
         else if (primeInt == 10)
         {
-			ArtChar1a.SetActive(false);
-			ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "That is protocol, yes.";
+            Char2name.text = "LIANHUA";
+            Char2speech.text = "Nah. Even if it was, I highly doubt the person would care";
         }
-  else if (primeInt == 11)
+        else if (primeInt == 11)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "But unfortunately we're short staffed at the moment and these cases are urgent. ";
-        }
-  else if (primeInt == 12)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "You're the only one available.";
-        }
-        else if (primeInt == 13)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "YOU";
+            Char1speech.text = "Alright then...";
             Char2name.text = "";
             Char2speech.text = "";
             // Turn off the "Next" button, turn on "Choice" buttons
@@ -171,17 +162,41 @@ else if (primeInt == 9)
         // after choice 1a
         else if (primeInt == 20)
         {
-            ArtChar1b.SetActive(false);
+            ArtChar1a.SetActive(false);
 			ArtChar1c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "You're lucky I'm choosing you at all for this assignment rookie";
+            Char2name.text = "LIANHUA";
+            Char2speech.text = "Pfft! Was that supposed to be a pickup line?";
         }
         else if (primeInt == 21)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "Right... Yes ma'am. Sorry.";
+            Char1speech.text = "N-No! It was a genuine question!";
+            Char2name.text = "";
+            Char2speech.text = "";
+			primeInt=39;
+        }
+         else if (primeInt == 22)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "LIANHUA";
+            Char2speech.text = "Uh huh...";
+			primeInt=39;
+        }
+         else if (primeInt == 23)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "Honest!";
+            Char2name.text = "";
+            Char2speech.text = "";
+			primeInt=39;
+        }
+         else if (primeInt == 24)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "This is my first time going to a club so...";
             Char2name.text = "";
             Char2speech.text = "";
 			primeInt=39;
@@ -189,17 +204,49 @@ else if (primeInt == 9)
 
         // after choice 1b
         else if (primeInt == 30)
-        {	ArtChar1b.SetActive(false);
+        {	ArtChar1a.SetActive(false);
 			ArtChar1c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Woah there rookie, let's tone it down a bit.";
+            Char2name.text = "LIANHUA";
+            Char2speech.text = "First time?";
         }
         else if (primeInt == 31)
         {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "LIANHUA";
+            Char2speech.text = "Man, I bet you were the sheltered kid growing up.";
+			primeInt=39;
+        }
+        else if (primeInt == 32)
+        {
             Char1name.text = "YOU";
-            Char1speech.text = "Oh...right.";
+            Char1speech.text = "I wouldn't say that. I just didn't have time to go partying is all.";
+            Char2name.text = "";
+            Char2speech.text = "";
+			primeInt=39;
+        }
+        else if (primeInt == 33)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "LIANHUA";
+            Char2speech.text = "You're a bookworm then?";
+			primeInt=39;
+        }
+        else if (primeInt == 34)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "LIANHUA";
+            Char2speech.text = "Grades more important than a social life?";
+			primeInt=39;
+        }
+        else if (primeInt == 35)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "I guess...";
             Char2name.text = "";
             Char2speech.text = "";
 			primeInt=39;
@@ -249,7 +296,7 @@ else if (primeInt == 41)
     public void Choice1aFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "Uh...Great! Totally no pressure!";
+        Char1speech.text = "So... Do you come here often?";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 19;
@@ -261,7 +308,7 @@ else if (primeInt == 41)
     public void Choice1bFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "I won't let you down!";
+        Char1speech.text = "This is my first time at a club.";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 29;

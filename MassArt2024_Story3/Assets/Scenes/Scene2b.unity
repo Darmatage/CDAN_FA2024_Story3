@@ -772,7 +772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_text
-      value: '"YES!"'
+      value: It's my first time
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1421,6 +1421,10 @@ MonoBehaviour:
   ArtChar1a: {fileID: 0}
   ArtChar1b: {fileID: 0}
   ArtChar1c: {fileID: 0}
+  ArtChar1d: {fileID: 0}
+  ArtChar1e: {fileID: 0}
+  ArtChar1f: {fileID: 0}
+  ArtChar1g: {fileID: 0}
   ArtBG1: {fileID: 0}
   Choice1a: {fileID: 898985288417711179}
   Choice1b: {fileID: 665671181}
@@ -1841,7 +1845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_text
-      value: '"NO!"'
+      value: Come here often?
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

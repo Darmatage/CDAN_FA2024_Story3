@@ -128,6 +128,8 @@ public class Scene3bDialogue : MonoBehaviour
 
  else if (primeInt == 8)
         {
+            ArtChar1e.SetActive(false);
+			ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "LIANHUA";
@@ -156,7 +158,7 @@ public class Scene3bDialogue : MonoBehaviour
         }
  		else if (primeInt == 12)
         {
-			ArtChar1e.SetActive(false);
+			ArtChar1a.SetActive(false);
 			ArtChar1c.SetActive(true); //turn on flirty
             Char1name.text = "";
             Char1speech.text = "";
