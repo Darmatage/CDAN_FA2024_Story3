@@ -75,8 +75,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294633706
-  m_fontColor: {r: 0.91860294, g: 0.91078675, b: 0.9811321, a: 1}
+    rgba: 4290305791
+  m_fontColor: {r: 1, g: 0.8711924, b: 0.72075474, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -288,8 +288,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294633706
-  m_fontColor: {r: 0.91860294, g: 0.91078675, b: 0.9811321, a: 1}
+    rgba: 4290305791
+  m_fontColor: {r: 1, g: 0.8711924, b: 0.72075474, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 7283506827740288799}
   - component: {fileID: 4303653473371655659}
   m_Layer: 5
-  m_Name: DIALOG_DISPLAY
+  m_Name: DIALOGUE_DISPLAY
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

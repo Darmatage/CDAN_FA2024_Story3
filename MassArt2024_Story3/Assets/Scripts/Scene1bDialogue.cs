@@ -24,8 +24,12 @@ public class Scene1bDialogue : MonoBehaviour
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
-    public GameObject NextScene1Button;
-    public GameObject NextScene2Button;
+    //public GameObject NextScene1Button;
+    //public GameObject NextScene2Button;
+	//public GameObject NextScene3Button;
+	public GameObject OpenJoeyButton;
+    public GameObject OpenLianhuaButton;
+	public GameObject OpenVanessaButton;
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
@@ -40,9 +44,10 @@ public class Scene1bDialogue : MonoBehaviour
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
-        NextScene1Button.SetActive(true);
-        NextScene2Button.SetActive(true);
-        nextButton.SetActive(false);
+        //NextScene1Button.SetActive(true);
+        //NextScene2Button.SetActive(true);
+		//NextScene3Button.SetActive(true);
+        nextButton.SetActive(true);
     }
 
     // Use the spacebar as a faster "Next" button:
@@ -71,61 +76,32 @@ public class Scene1bDialogue : MonoBehaviour
             
             DialogueDisplay.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "Whew. First day. I'm nervous.";
+            Char1speech.text = "Huh. OK. Three files, just as promised.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "At least I won't have to hunt monsters on my first day!";
+            Char1speech.text = "Let's take a look.";
             Char2name.text = "";
             Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "You wanted to see me Boss?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 5)
-        {
-			ArtChar1a.SetActive(true);
+			DialogueDisplay.SetActive(false);
+			nextButton.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Yes, I have an assignment for you.";
-        }
-        else if (primeInt == 6)
-        {
-            Char1name.text = "YOU";
-            Char1speech.text = "Already?";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 7)
-        {
-            Char1name.text = "YOU";
-            Char1speech.text = "I mean- if it's not presumtous of me. I just started!";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-else if (primeInt == 8)
-        {
-            Char1name.text = "YOU";
-            Char1speech.text = "Shouldn't I be doing some grunt work or some training before taking on a case?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-else if (primeInt == 9)
-        {
-            Char1name.text = "YOU";
-            Char1speech.text = "Maybe shadow someone even...?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
+        
+		
+
+
+//when you come back to this scene from Joey:
         else if (primeInt == 10)
         {
 			ArtChar1a.SetActive(false);
@@ -232,7 +208,7 @@ else if (primeInt == 41)
 			// Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene1Button.SetActive(true);
+            //NextScene1Button.SetActive(true);
         }
 
 
@@ -265,12 +241,52 @@ else if (primeInt == 41)
         allowSpace = true;
     }
 
+//Open Joey File:
+    public void OpenJoey()
+    {
+        ArtChar1a.SetActive(true);
+		TurnOffFileOpenButtons();
+    }
+//Open Lianhua File:
+    public void OpenLianhua()
+    {
+        ArtChar1b.SetActive(true);
+		TurnOffFileOpenButtons();
+    }
+//Open Vanessa File:
+	public void OpenVanessa()
+    {
+        ArtChar1c.SetActive(true);
+		TurnOffFileOpenButtons();
+    }
+
+//investigate Joey:
     public void SceneChange1()
     {
         SceneManager.LoadScene("Scene2a");
     }
+//investigate Lianhua:
     public void SceneChange2()
     {
         SceneManager.LoadScene("Scene2b");
     }
+//investigate Vanessa:
+	    public void SceneChange3()
+    {
+        SceneManager.LoadScene("Scene2c");
+    }
+
+
+	public void TurnOffFileOpenButtons(){
+		OpenJoeyButton.SetActive(false);
+    	OpenLianhuaButton.SetActive(false);
+		OpenVanessaButton.SetActive(false);
+	}
+
+	public void TurnOnFileOpenButtons(){
+		OpenJoeyButton.SetActive(true);
+    	OpenLianhuaButton.SetActive(true);
+		OpenVanessaButton.SetActive(true);
+	}
+
 }

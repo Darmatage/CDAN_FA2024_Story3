@@ -71,7 +71,16 @@ public class Scene2aDialogue : MonoBehaviour
             {
                 Next();
             }
+
+			//secret debug code
+			if (Input.GetKeyDown("p"))
+            {
+                //Previous();
+				primeInt -= 2;
+				Next();
+            }
         }
+
     }
 
     //Story Units! The main story function. Players hit [NEXT] to progress to the next primeInt:
@@ -231,7 +240,7 @@ public class Scene2aDialogue : MonoBehaviour
             Char1name.text = "YOU";
             Char1speech.text = "Right...Well. I wasn't sure if you'd remember me!";
             Char2name.text = "";
-            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 35)
         {
@@ -240,18 +249,10 @@ public class Scene2aDialogue : MonoBehaviour
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 35)
+        else if (primeInt == 36)
         {
             ArtChar1c.SetActive(false);
             ArtChar1b.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Joey";
-            Char2speech.text = "...";
-        }
-        else if (primeInt == 36)
-        {
-
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Joey";
@@ -310,6 +311,13 @@ public class Scene2aDialogue : MonoBehaviour
            Char1speech.text = "Yeah...so, um- anyways.";
            Char2name.text = "";
            Char2speech.text = "";
+		}
+        else if (primeInt == 44)
+        { 
+           Char1name.text = "You";
+           Char1speech.text = "[I've gotta loosen him up...]";
+           Char2name.text = "";
+           Char2speech.text = "";
 
 			// Turn off the "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
@@ -317,7 +325,6 @@ public class Scene2aDialogue : MonoBehaviour
             Choice2a.SetActive(true);
             Choice2b.SetActive(true);
 		}
-
 
 	//after choice 2a
 		else if (primeInt == 50)
@@ -439,7 +446,7 @@ public class Scene2aDialogue : MonoBehaviour
     public void Choice1bFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "I was actually looking for you! You're Joey right?";
+        Char1speech.text = "I was actually looking for you! \nYou're Joey right?";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 29;
@@ -481,7 +488,7 @@ public class Scene2aDialogue : MonoBehaviour
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("SceneFiles");
+        SceneManager.LoadScene("Scene1b");
     }
     public void SceneChange2()
     {
