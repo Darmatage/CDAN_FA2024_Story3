@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene1Dialogue : MonoBehaviour
+public class Scene1aDialogue : MonoBehaviour
 {
     // These are the script variables.
     // For more character images / buttons, copy & renumber the variables:
