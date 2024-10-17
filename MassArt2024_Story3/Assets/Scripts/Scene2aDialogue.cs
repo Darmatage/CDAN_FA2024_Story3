@@ -329,6 +329,9 @@ public class Scene2aDialogue : MonoBehaviour
 	//after choice 2a
 		else if (primeInt == 50)
 		{
+
+            ArtChar1c.SetActive(false);
+            ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Joey";
@@ -336,8 +339,7 @@ public class Scene2aDialogue : MonoBehaviour
             }
             else if (primeInt == 51)
             {
-                ArtChar1c.SetActive(false);
-                ArtChar1e.SetActive(true);
+                
                 Char1name.text = "You";
                 Char1speech.text = "It's ok if you lost it, I'll just borrow yours.";
                 Char2name.text = "";
@@ -345,6 +347,8 @@ public class Scene2aDialogue : MonoBehaviour
             }
             else if (primeInt == 52)
             {
+                ArtChar1b.SetActive(false);
+                ArtChar1e.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Joey";
@@ -362,9 +366,18 @@ public class Scene2aDialogue : MonoBehaviour
                 Char1name.text = "You";
                 Char1speech.text = "Oh...";
                 Char2name.text = "";
+                Char2speech.text = "";
+            }
+  else if (primeInt == 55)
+            {
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Joey";
                 Char2speech.text = "BUT UM!! That's not to say- I mean I don't!! We could uh.";
             }
-           else if (primeInt == 55)
+
+
+           else if (primeInt == 56)
             {
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -373,7 +386,7 @@ public class Scene2aDialogue : MonoBehaviour
      
             }
 
-           else if (primeInt == 56)
+           else if (primeInt == 57)
             {
                 Char1name.text = "You";
                 Char1speech.text = "Like a date?";
@@ -381,7 +394,7 @@ public class Scene2aDialogue : MonoBehaviour
                 Char2speech.text = "";
             }
 
-           else if (primeInt == 57)
+           else if (primeInt == 58)
             {
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -389,7 +402,7 @@ public class Scene2aDialogue : MonoBehaviour
                 Char2speech.text = "YEAH!! Or no..? Or whatever!!";
 
             }
-          else if (primeInt == 58)
+          else if (primeInt == 59)
             {
                 Char1name.text = "You";
                 Char1speech.text = "Sure, a date then.";
@@ -397,14 +410,14 @@ public class Scene2aDialogue : MonoBehaviour
                 Char2speech.text = "";
             }
 
-		else if(primeInt == 59)
+		else if(primeInt == 60)
             {
                 Char1name.text = "You";
                 Char1speech.text = "Pick you up after your work on friday? You pick where?";
                 Char2name.text = "";
                 Char2speech.text = "";
             }
-	else if (primeInt == 60)
+	else if (primeInt == 61)
 	{
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -414,18 +427,126 @@ public class Scene2aDialogue : MonoBehaviour
             // Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene2Button.SetActive(true);
+            NextScene1Button.SetActive(true);
+           NextScene2Button.SetActive(true);
 	}
 
 	//after choice 2b
 		else if (primeInt == 70)
 		{
+                Char1name.text = "You";
+                Char1speech.text = "We should hang out more!";
+                Char2name.text = "";
+                Char2speech.text = "";
+
+		}
+else if (primeInt == 71)
+		{
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Joey";
-                Char2speech.text = "[needs text related to this choice]";
+                Char2speech.text = "What? Really? You think?";
 
 		}
+
+else if (primeInt == 72)
+		{
+                Char1name.text = "You";
+                Char1speech.text = "Sure! Why not! I mean- you had fun that night, didn't you?";
+                Char2name.text = "";
+                Char2speech.text = "";
+
+		}
+
+else if (primeInt == 73)
+		{
+            ArtChar1d.SetActive(false);
+            ArtChar1b.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Joey";
+                Char2speech.text = "T..uh. Yeah toally!!";
+
+		}
+
+else if (primeInt == 74)
+		{
+                Char1name.text = "You";
+                Char1speech.text = "So why not?";
+                Char2name.text = "";
+                Char2speech.text = "";
+
+		}
+
+else if (primeInt == 75)
+		{
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Joey";
+                Char2speech.text = "You're straight on!! Listen, I got the coolest spot.";
+
+		}
+
+        else if (primeInt == 76)
+		{
+                Char1name.text = "You";
+                Char1speech.text = "Deal. I'll pick you up on Friday. You show the way.";
+                Char2name.text = "";
+                Char2speech.text = "";
+
+		}
+         else if (primeInt == 77)
+		{
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Joey";
+                Char2speech.text = "SWEET!! You'll totally dig it. Though I'm curious...do you skate?";
+
+		}
+  else if (primeInt == 78)
+		{
+                Char1name.text = "You";
+                Char1speech.text = "Uhhh...";
+                Char2name.text = "";
+                Char2speech.text = "";
+
+		}
+  else if (primeInt == 79)
+		{
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Joey";
+                Char2speech.text = "You know what, don't sweat it pro or no you'll have the best time bro.";
+
+		}
+
+else if (primeInt == 80)
+		{
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Joey";
+                Char2speech.text = "WAIT!! THAT RHYMED!!!";
+
+		}
+
+        else if (primeInt == 81)
+		{
+                Char1name.text = "You";
+                Char1speech.text = "It sure did...";
+                Char2name.text = "";
+                Char2speech.text = "";
+
+// Turn off the "Next" button, turn on "Scene" button/s
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene1Button.SetActive(true);
+           NextScene2Button.SetActive(true);
+		}
+        
 
         //Please do NOT delete this final bracket that ends the Next() function:
     }
@@ -474,7 +595,7 @@ public class Scene2aDialogue : MonoBehaviour
 	public void Choice2bFunct()
 	{
 		Char1name.text = "YOU";
-		Char1speech.text = "[need text related to this choice]";
+		Char1speech.text = "I had a really good time with you that night!";
 		Char2name.text = "";
 		Char2speech.text = "";
 		primeInt = 69;
