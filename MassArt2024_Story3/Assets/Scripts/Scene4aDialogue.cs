@@ -71,14 +71,14 @@ public class Scene4aDialogue : MonoBehaviour
             
             DialogueDisplay.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "Whew. First day. I'm nervous.";
+            Char1speech.text = "Alright! That's the last of 'em!!";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "At least I won't have to hunt monsters on my first day!";
+            Char1speech.text = "Phew- Who knew hunting monsters would be so difficult.";
             Char2name.text = "";
             Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
@@ -86,45 +86,45 @@ public class Scene4aDialogue : MonoBehaviour
         else if (primeInt == 4)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "You wanted to see me Boss?";
+            Char1speech.text = "Maybe I can go on vacation after this...";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 5)
         {
 			ArtChar1a.SetActive(true);
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Yes, I have an assignment for you.";
+            Char1name.text = "You";
+            Char1speech.text = "Hey Boss! I did as you asked.";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 6)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "Already?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "Already?";
         }
         else if (primeInt == 7)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "I mean- if it's not presumtous of me. I just started!";
+            Char1speech.text = "Yep!";
             Char2name.text = "";
             Char2speech.text = "";
         }
 else if (primeInt == 8)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "Shouldn't I be doing some grunt work or some training before taking on a case?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "That was quick...";
         }
 else if (primeInt == 9)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "Maybe shadow someone even...?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "Not even our best workers can hunt down monsters that quick.";
         }
         else if (primeInt == 10)
         {
@@ -133,21 +133,21 @@ else if (primeInt == 9)
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
-            Char2speech.text = "That is protocol, yes.";
+            Char2speech.text = "Let alone three...";
         }
   else if (primeInt == 11)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
-            Char2speech.text = "But unfortunately we're short staffed at the moment and these cases are urgent. ";
+            Char2speech.text = "Unless they've been slacking off this entire time.";
         }
   else if (primeInt == 12)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
-            Char2speech.text = "You're the only one available.";
+            Char2speech.text = "";
         }
         else if (primeInt == 13)
         {

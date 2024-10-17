@@ -808,7 +808,7 @@ else if (primeInt == 152)
             // Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
             allowSpace = (false);
-            NextScene2Button.SetActive(true);
+            NextScene3Button.SetActive(true);
         }
             
         
@@ -894,7 +894,7 @@ public void Choice2aFunct()
     public void Choice4bFunct()
     {
         Char1name.text = "You";
-        Char1speech.text = "";
+        Char1speech.text = "Well...I guess I better start heading back, deadlines and all.";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 149;
@@ -909,7 +909,7 @@ public void Choice2aFunct()
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene3b");
+        SceneManager.LoadScene("SceneLose_JoeyRomance");
     }
     public void SceneChange3()
     {

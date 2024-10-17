@@ -31,7 +31,7 @@ public class Scene1bDialogue : MonoBehaviour
     public GameObject OpenLianhuaButton;
 	public GameObject OpenVanessaButton;
     public GameObject nextButton;
-    //public AudioSource audioSource1;
+    public AudioSource SFX_pageflip;
     private bool allowSpace = true;
 
     // Set initial visibility. Added images or buttons need to also be SetActive(false);
@@ -244,18 +244,21 @@ else if (primeInt == 41)
 //Open Joey File:
     public void OpenJoey()
     {
+        SFX_pageflip.Play();
         ArtChar1a.SetActive(true);
 		TurnOffFileOpenButtons();
     }
 //Open Lianhua File:
     public void OpenLianhua()
     {
+        SFX_pageflip.Play();
         ArtChar1b.SetActive(true);
 		TurnOffFileOpenButtons();
     }
 //Open Vanessa File:
 	public void OpenVanessa()
     {
+        SFX_pageflip.Play();
         ArtChar1c.SetActive(true);
 		TurnOffFileOpenButtons();
     }
