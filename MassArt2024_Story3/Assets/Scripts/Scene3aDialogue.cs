@@ -30,8 +30,11 @@ public class Scene3aDialogue : MonoBehaviour
     public GameObject Choice2a;
     public GameObject Choice2b;
     public GameObject Choice3;
+    public GameObject Choice4a;
+    public GameObject Choice4b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
+    public GameObject NextScene3Button;
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
@@ -52,8 +55,11 @@ public class Scene3aDialogue : MonoBehaviour
         Choice2a.SetActive(false);
         Choice2b.SetActive(false);
         Choice3.SetActive(false);
+        Choice4a.SetActive(false);
+        Choice4b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
+        NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -436,7 +442,8 @@ else if (primeInt == 72)
  //after choice 2b
 else if (primeInt == 80)
         {	
-         
+         ArtChar1a.SetActive(false);
+         ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Joey";
@@ -452,7 +459,8 @@ else if (primeInt == 81)
         }
         else if (primeInt == 82)
         {	
-         
+         ArtChar1d.SetActive(false);
+         ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Joey";
@@ -486,7 +494,8 @@ else if (primeInt == 81)
 
           else if (primeInt == 86)
         {	
-         
+         ArtChar1a.SetActive(false);
+         ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Joey";
@@ -567,7 +576,8 @@ else if (primeInt == 81)
         }
         else if (primeInt == 96)
         {	
-         
+         ArtChar1a.SetActive(false);
+         ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Joey";
@@ -588,11 +598,219 @@ else if (primeInt == 81)
             Choice3.SetActive(true); // function Choice3Funct()
         }
 			
-            
+            //after choice3
+else if (primeInt == 100)
+        {	
+         
+            Char1name.text = "You";
+            Char1speech.text = "of course, did you think I'm gonna ditch you becuase you're a little more gelatinous than most?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+else if (primeInt == 101)
+        {	
+         ArtChar1d.SetActive(false);
+         ArtChar1a.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "*laughs* You can never tell. A lot of people dislike Jell-O.";
+        }
+            else if (primeInt == 102)
+        {	
+         
+            Char1name.text = "You";
+            Char1speech.text = "News to me.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 103)
+        {	
+         
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "Well, I guess this means you'll be forced to learn to skate then.";
+        }
+        else if (primeInt == 104)
+        {	
+         
+            Char1name.text = "You";
+            Char1speech.text = "Is it too late to change my mind?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 105)
+        {	
+         
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "*laughs* Yes.";
+        }
+        else if (primeInt == 106)
+        {	
+         
+            Char1name.text = "You";
+            Char1speech.text = "Darn.";
+            Char2name.text = "";
+            Char2speech.text = "";
+
+             // Turn off the "Next" button, turn on "Choice" buttons
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice4a.SetActive(true); // function Choice4aFunct()
+            Choice4b.SetActive(true); // function Choice4bFunct()
+        }
+
+        //after choice 4a
+else if (primeInt == 130)
+        {	
+         ArtChar1a.SetActive(false);
+         ArtChar1d.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "I don't wanna keep you! You must have work deadlines and all.";
+        }
+        else if (primeInt == 131)
+        {	
+         ArtChar1d.SetActive(false);
+         ArtChar1a.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "Janitors don't really have to worry about that stuff.";
+        }
+        else if (primeInt == 132)
+        {	
+         
+            Char1name.text = "You";
+            Char1speech.text = "Deadlines can wait. I'm focused on more important things.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 133)
+        {	
+         
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "Like?";
+        }
+        else if (primeInt == 134)
+        {	
+         
+            Char1name.text = "You";
+            Char1speech.text = "You.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 135)
+        {	
+         ArtChar1a.SetActive(false);
+         ArtChar1c.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "O-Oh! What??";
+        }
+        else if (primeInt == 136)
+        {	
+         
+            Char1name.text = "You";
+            Char1speech.text = "You've made a total mess of my heart! But- maybe you could fix that?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 137)
+        {	
+         
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "Well...If anyone is qualified for that...it's me.";
+        }
+        else if (primeInt == 138)
+        {	
+         
+            Char1name.text = "You";
+            Char1speech.text = "My thoughts exactly.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 139)
+        {	
+         ArtChar1c.SetActive(false);
+         ArtChar1b.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "Radical.";
+
             // Turn off the "Next" button, turn on "Scene" button/s
-            //nextButton.SetActive(true);
-            //allowSpace = (true);
-            //NextScene1Button.SetActive(false);
+            nextButton.SetActive(false);
+            allowSpace = (false);
+            NextScene2Button.SetActive(true);
+        }
+
+//after choice 4a
+
+else if (primeInt == 150)
+        {	
+         
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "I guess a janitor never really understands that stuff.";
+        }
+        else if (primeInt == 151)
+        {	
+         
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "Stains and spills don't really have deadlies.";
+        }
+else if (primeInt == 152)
+        {	
+         
+            Char1name.text = "You";
+            Char1speech.text = "*laughs* Maybe I should become a janitor.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 153)
+        {	
+         
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "I have a feeling you'd be good at it.";
+        }
+        else if (primeInt == 154)
+        {	
+         
+            Char1name.text = "You";
+            Char1speech.text = "I have a feeling you're right. See you around Joey.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 155)
+        {	
+         ArtChar1a.SetActive(false);
+         ArtChar1b.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "Catch you later dude!";
+
+            // Turn off the "Next" button, turn on "Scene" button/s
+            nextButton.SetActive(false);
+            allowSpace = (false);
+            NextScene2Button.SetActive(true);
+        }
+            
         
          
 
@@ -632,13 +850,14 @@ public void Choice2aFunct()
         primeInt = 69;
         Choice2a.SetActive(false);
         Choice2b.SetActive(false);
+        Choice3.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
     public void Choice2bFunct()
     {
         Char1name.text = "You";
-        Char1speech.text = "*You offer your hand, helping pull him up.";
+        Char1speech.text = "*You offer your hand, helping pull him up.*";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 79;
@@ -659,6 +878,31 @@ public void Choice2aFunct()
         nextButton.SetActive(true);
         allowSpace = true;
     }
+    public void Choice4aFunct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "Huh- I guess time really does fly when you're having fun.";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 129;
+        Choice4a.SetActive(false);
+        Choice4b.SetActive(false);
+        Choice3.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void Choice4bFunct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 149;
+        Choice4a.SetActive(false);
+        Choice4b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
     public void SceneChange1()
     {
         SceneManager.LoadScene("Scene1b");
@@ -666,5 +910,9 @@ public void Choice2aFunct()
     public void SceneChange2()
     {
         SceneManager.LoadScene("Scene3b");
+    }
+    public void SceneChange3()
+    {
+        SceneManager.LoadScene("Scene1b");
     }
 }
