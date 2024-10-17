@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene3aDialogue : MonoBehaviour
+public class Scene3aDialogue : MonoBehaviour{
 
     // These are the script variables.
     // For more character images / buttons, copy & renumber the variables:
@@ -61,7 +61,7 @@ public class Scene3aDialogue : MonoBehaviour
         }
     }
 
-
+     
     //Story Units! The main story function. Players hit [NEXT] to progress to the next primeInt:
     public void Next()
     {
@@ -81,6 +81,7 @@ public class Scene3aDialogue : MonoBehaviour
         }
         else if (primeInt == 3)
         {
+            ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Joey";
@@ -96,6 +97,7 @@ public class Scene3aDialogue : MonoBehaviour
         }
         else if (primeInt == 5)
         {
+            ArtChar1b.SetActive(false);
 			ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -171,23 +173,29 @@ else if (primeInt == 9)
         // after choice 1b
        
        else if (primeInt == 30)
-        {	ArtChar1a.SetActive(false);
+         {
+            ArtChar1a.SetActive(false);
 			ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Joey";
             Char2speech.text = "LET'S DO IT!!!";
+            primeInt=39;
         }
          
-        else if (primeInt == 31)
-        {	
-            
+
+	//after both choices:
+
+      else if (primeInt == 40)
+        {
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "[later]";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 32)
+        else if (primeInt == 41)
         {	
 			
             Char1name.text = "You";
@@ -196,16 +204,16 @@ else if (primeInt == 9)
             Char2speech.text = "";
         }
 
-         else if (primeInt == 33)
+         else if (primeInt == 42)
         {	
-			
+            ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Joey";
             Char2speech.text = "*laughing* Did you seriously think that jumping on it was a good idea??";
         }
 
-        else if (primeInt == 34)
+        else if (primeInt == 43)
         {	
 			
             Char1name.text = "You";
@@ -213,55 +221,139 @@ else if (primeInt == 9)
             Char2name.text = "";
             Char2speech.text = "";
         }
-       else if (primeInt == 35)
+       else if (primeInt == 44)
         {	
 			
             Char1name.text = "You";
             Char1speech.text = "I can already feel it bruising...";
             Char2name.text = "";
-            Char2speech.text = ""
-			primeInt=39;
+            Char2speech.text = "";
+		
+        }
+	    else if (primeInt == 45)
+        {	
+			
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "Well! Something to remember the experience by.";
+        }
+	    else if (primeInt == 46)
+        {	
+			
+            Char1name.text = "You";
+            Char1speech.text = "Yeah- Till it heals...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+       else if (primeInt == 47)
+        {		
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "I guess we'll have to hang out again!";
+        }
+        else if (primeInt == 48)
+        {	
+			
+            Char1name.text = "You";
+            Char1speech.text = "Yeah...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 49)
+        {	
+			
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "Hey! Wanna see this new trick I'm working on?";
+        }
+       else if (primeInt == 50)
+        {	
+			
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "I think I'm on the verge of CRUSHING it.";
+        }
+        else if (primeInt == 51)
+        {	
+			
+            Char1name.text = "You";
+            Char1speech.text = "More like crushing some poor kid who gets in the way.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 52)
+        {	
+			
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "Har. Har. You'll see.";
+        }
+         else if (primeInt == 53)
+        {	
+			
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Joey";
+            Char2speech.text = "Alright. Be ready to eat your words!!!";
+        }
+        else if (primeInt == 54)
+        {	
+			ArtChar1b.SetActive(false);
+            Char1name.text = "You";
+            Char1speech.text = "Oh boy-";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
 
-	//after both choices:
-	    else if (primeInt == 40)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Whatever.";
+         else if (primeInt == 55)
+        {	
+			
+            Char1name.text = "You";
+            Char1speech.text = "[Oh! he's actually not bad...]";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-       else if (primeInt == 41)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Here are your files.";
+        else if (primeInt == 56)
+        {	
+			
+            Char1name.text = "You";
+            Char1speech.text = "[I hope he sees that guy that just dropped in- Uh oh.]";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-		else if (primeInt == 42)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Choose one to start off with.";
+         else if (primeInt == 57)
+        {	
+			
+            Char1name.text = "You";
+            Char1speech.text = "JOEY!! LOOK OUT FOR THE-";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-		else if (primeInt == 43)
-        {
+        else if (primeInt == 58)
+        {	
+			
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "You can choose your next case once you're done with your first.";
+            Char2name.text = "Joey";
+            Char2speech.text = "AGHHH!!!";
+        }
 			// Turn off the "Next" button, turn on "Scene" button/s
-            nextButton.SetActive(false);
-            allowSpace = (false);
-            NextScene1Button.SetActive(true);
-        }
-
+            nextButton.SetActive(true);
+            allowSpace = (true);
+            NextScene1Button.SetActive(false);
+        
+         
 
         //Please do NOT delete this final bracket that ends the Next() function:
     }
 
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
+    
     public void Choice1aFunct()
     {
         Char1name.text = "You";
@@ -295,3 +387,4 @@ else if (primeInt == 9)
     {
         SceneManager.LoadScene("Scene3b");
     }
+}
