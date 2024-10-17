@@ -30,6 +30,13 @@ public class Scene2bDialogue : MonoBehaviour
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
+    public GameObject Choice2a;
+    public GameObject Choice3a;
+    public GameObject Choice3b;
+    public GameObject Choice4a;
+    public GameObject Choice4b;
+    public GameObject Choice5a;
+   
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
@@ -51,6 +58,12 @@ public class Scene2bDialogue : MonoBehaviour
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
+        Choice2a.SetActive(false);
+        Choice3a.SetActive(false);
+        Choice3b.SetActive(false);
+        Choice4a.SetActive(false);
+        Choice4b.SetActive(false);
+        Choice5a.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
@@ -81,14 +94,14 @@ public class Scene2bDialogue : MonoBehaviour
         {
             
             DialogueDisplay.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Alright, this should be the place.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Man it's really crowded. I can barely even hear myself think!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -96,7 +109,7 @@ public class Scene2bDialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "At least the music is good...";
             Char2name.text = "";
             Char2speech.text = "";
@@ -104,21 +117,21 @@ public class Scene2bDialogue : MonoBehaviour
         else if (primeInt == 5)
         {
 			ArtChar1e.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Wait a minute... That's my target!";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 6)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Ok, ok. Act cool.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 7)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Just approach the bar like a normal person!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -127,7 +140,7 @@ else if (primeInt == 8)
         {
             ArtChar1e.SetActive(false);
 			ArtChar1a.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Hi, is this seat taken?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -136,19 +149,19 @@ else if (primeInt == 9)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "LIANHUA";
+            Char2name.text = "Lianhua";
             Char2speech.text = "Hm?";
         }
         else if (primeInt == 10)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "LIANHUA";
+            Char2name.text = "Lianhua";
             Char2speech.text = "Nah. Even if it was, I highly doubt the person would care";
         }
         else if (primeInt == 11)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Alright then... Um...";
             Char2name.text = "";
             Char2speech.text = "";
@@ -166,12 +179,12 @@ else if (primeInt == 9)
 			ArtChar1c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "LIANHUA";
+            Char2name.text = "Lianhua";
             Char2speech.text = "Pfft! Was that supposed to be a pickup line?";
         }
         else if (primeInt == 21)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "N-No! It was a genuine question!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -180,19 +193,19 @@ else if (primeInt == 9)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "LIANHUA";
+            Char2name.text = "Lianhua";
             Char2speech.text = "Uh huh...";
         }
          else if (primeInt == 23)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Honest!";
             Char2name.text = "";
             Char2speech.text = "";
         }
          else if (primeInt == 24)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "This is my first time going to a club so...";
             Char2name.text = "";
             Char2speech.text = "";
@@ -201,12 +214,12 @@ else if (primeInt == 9)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "LIANHUA";
+            Char2name.text = "Lianhua";
             Char2speech.text = "Psh, relax! I was just teasing.";
         }
          else if (primeInt == 26)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "O-Oh...";
             Char2name.text = "";
             Char2speech.text = "";
@@ -219,19 +232,19 @@ else if (primeInt == 9)
 			ArtChar1c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "LIANHUA";
+            Char2name.text = "Lianhua";
             Char2speech.text = "First time?";
         }
         else if (primeInt == 31)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "LIANHUA";
+            Char2name.text = "Lianhua";
             Char2speech.text = "Man, I bet you were the sheltered kid growing up.";
         }
         else if (primeInt == 32)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "I wouldn't say that. I just didn't have the time to go partying is all.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -240,19 +253,19 @@ else if (primeInt == 9)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "LIANHUA";
+            Char2name.text = "Lianhua";
             Char2speech.text = "You're a bookworm then?";
         }
         else if (primeInt == 34)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "LIANHUA";
+            Char2name.text = "Lianhua";
             Char2speech.text = "Grades more important than a social life?";
         }
         else if (primeInt == 35)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "I guess...";
             Char2name.text = "";
             Char2speech.text = "";
@@ -264,30 +277,30 @@ else if (primeInt == 9)
         {
 			ArtChar1c.SetActive(false);
 			ArtChar1a.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "...";
             Char2name.text = "";
-            Char2speech.text = ".";
+            Char2speech.text = "";
         }
 else if (primeInt == 41)
         {
             ArtChar1a.SetActive(false);
 			ArtChar1e.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "[Ah man! that was horrible!]";
             Char2name.text = "";
             Char2speech.text = "";
         }
 		else if (primeInt == 42)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "[Maybe I should quit while I still have some dignity left...]";
             Char2name.text = "";
             Char2speech.text = "";
         }
 		else if (primeInt == 43)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "[How embarrassing!]";
             Char2name.text = "";
             Char2speech.text = ".";
@@ -295,8 +308,142 @@ else if (primeInt == 41)
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true);
+            Choice2a.SetActive(true);
         }
 
+    //after choice 2a
+		else if (primeInt == 50)
+		{
+            ArtChar1e.SetActive(false);
+			ArtChar1a.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "What do I recommend?";
+        }
+        else if (primeInt == 51)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "I mean... How well can you hold your alcohol?";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice3a.SetActive(true); 
+            Choice3b.SetActive(true);
+        }
+
+
+//after choice 3a
+		else if (primeInt == 70)
+		{
+            ArtChar1a.SetActive(false);
+			ArtChar1e.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Riiiiiight.";
+        }
+        else if (primeInt == 71)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "I totally believe that...";
+        }
+        else if (primeInt == 72)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "Ehe...";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt=89;
+        }
+
+//after choice 3b
+		else if (primeInt == 80)
+		{
+            ArtChar1a.SetActive(false);
+			ArtChar1e.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "I don't doubt that.";
+		}
+        else if (primeInt == 81)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "ah-";
+            Char2name.text = "";
+            Char2speech.text = "";
+            primeInt=89;
+		}
+
+//after both choices 3a/3b:
+	    else if (primeInt == 90)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Hm...";
+        }
+        else if (primeInt == 91)
+        {
+            ArtChar1e.SetActive(false);
+			ArtChar1b.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "I know just the drink";
+        }
+        else if (primeInt == 92)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "[So far so good. Don't mess this up!]";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 93)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "So... What made you want to finally try out the club?";
+        }
+        else if (primeInt == 94)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Huh? Me? Uh well...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 95)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "I guess I was just curious.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 96)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Just curious?";
+        }
+        else if (primeInt == 97)
+        {
+            ArtChar1b.SetActive(false);
+			ArtChar1c.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Not in search of a potential partner or anything?";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            //Choice2a.SetActive(true);
+            //Choice2b.SetActive(true);
+        }
 
         //Please do NOT delete this final bracket that ends the Next() function:
     }
@@ -304,7 +451,7 @@ else if (primeInt == 41)
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
     public void Choice1aFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "So... Do you come here often?";
         Char2name.text = "";
         Char2speech.text = "";
@@ -316,7 +463,7 @@ else if (primeInt == 41)
     }
     public void Choice1bFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "This is my first time at a club.";
         Char2name.text = "";
         Char2speech.text = "";
@@ -326,6 +473,48 @@ else if (primeInt == 41)
         nextButton.SetActive(true);
         allowSpace = true;
     }
+
+    // second story choice for scene2b
+
+    public void Choice2aFunct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "Um- What type of drink do you recommend?";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 49;
+        Choice2a.SetActive(false);
+        NextScene1Button.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+
+    // third story choice for scene2b
+
+	public void Choice3aFunt()
+	{ 
+		Char1name.text = "You";
+		Char1speech.text = "Oh I drink alcohol like water!";
+		Char2name.text = "";
+		Char2name.text = "";
+		primeInt = 69;
+		Choice3a.SetActive(false);
+		Choice3b.SetActive(false);
+		nextButton.SetActive(true);
+		allowSpace = true;
+	}
+	public void Choice3bFunct()
+	{
+		Char1name.text = "You";
+		Char1speech.text = "I'd say I'm pretty much a lightweight.";
+		Char2name.text = "";
+		Char2speech.text = "";
+		primeInt = 79;
+		Choice3a.SetActive(false);
+		Choice3b.SetActive(false);
+		nextButton.SetActive(true);
+		allowSpace = true;
+	}
 
     public void SceneChange1()
     {
