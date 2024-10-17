@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 public class Scene3aDialogue : MonoBehaviour
-{
+
     // These are the script variables.
     // For more character images / buttons, copy & renumber the variables:
     public int primeInt = 1;        // This integer drives game progress!
@@ -140,7 +140,6 @@ else if (primeInt == 9)
             Char1speech.text = "";
             Char2name.text = "Joey";
             Char2speech.text = "Well, wanna skate?";
-        }
  
             // Turn off the "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
@@ -159,7 +158,7 @@ else if (primeInt == 9)
             Char2name.text = "Joey";
             Char2speech.text = "Who says you're gonna fall?";
         }
- else if (primeInt == 21)
+        else if (primeInt == 21)
         {
             Char1name.text = "You";
             Char1speech.text = "Who says I won't on purpose?";
@@ -168,7 +167,6 @@ else if (primeInt == 9)
 			primeInt=39;
         }
 
-        else if (primeInt == 22)
 
         // after choice 1b
        
@@ -183,7 +181,7 @@ else if (primeInt == 9)
          
         else if (primeInt == 31)
         {	
-            ArtChar1a.SetActive(false);
+            
             Char1name.text = "You";
             Char1speech.text = "[later]";
             Char2name.text = "";
@@ -191,7 +189,7 @@ else if (primeInt == 9)
         }
         else if (primeInt == 32)
         {	
-			ArtChar1b.SetActive(true);
+			
             Char1name.text = "You";
             Char1speech.text = "Oh man- I'm never getting on wheels again";
             Char2name.text = "";
@@ -200,7 +198,7 @@ else if (primeInt == 9)
 
          else if (primeInt == 33)
         {	
-			ArtChar1b.SetActive(true);
+			
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Joey";
@@ -209,15 +207,15 @@ else if (primeInt == 9)
 
         else if (primeInt == 34)
         {	
-			ArtChar1b.SetActive(true);
+			
             Char1name.text = "You";
             Char1speech.text = "well, EXCUSE me for thinking it would be like a fun blast-off.";
             Char2name.text = "";
             Char2speech.text = "";
         }
-else if (primeInt == 35)
+       else if (primeInt == 35)
         {	
-			ArtChar1b.SetActive(true);
+			
             Char1name.text = "You";
             Char1speech.text = "I can already feel it bruising...";
             Char2name.text = "";
@@ -228,14 +226,12 @@ else if (primeInt == 35)
 	//after both choices:
 	    else if (primeInt == 40)
         {
-			ArtChar1c.SetActive(false);
-			ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
             Char2speech.text = "Whatever.";
         }
-else if (primeInt == 41)
+       else if (primeInt == 41)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -257,7 +253,7 @@ else if (primeInt == 41)
             Char2speech.text = "You can choose your next case once you're done with your first.";
 			// Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
-            allowSpace = false;
+            allowSpace = (false);
             NextScene1Button.SetActive(true);
         }
 
@@ -293,9 +289,9 @@ else if (primeInt == 41)
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("Scene1b");
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("Scene3b");
     }
