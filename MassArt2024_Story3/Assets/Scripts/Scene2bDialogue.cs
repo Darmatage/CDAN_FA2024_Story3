@@ -175,7 +175,6 @@ else if (primeInt == 9)
             Char1speech.text = "N-No! It was a genuine question!";
             Char2name.text = "";
             Char2speech.text = "";
-			primeInt=39;
         }
          else if (primeInt == 22)
         {
@@ -183,7 +182,6 @@ else if (primeInt == 9)
             Char1speech.text = "";
             Char2name.text = "LIANHUA";
             Char2speech.text = "Uh huh...";
-			primeInt=39;
         }
          else if (primeInt == 23)
         {
@@ -191,12 +189,25 @@ else if (primeInt == 9)
             Char1speech.text = "Honest!";
             Char2name.text = "";
             Char2speech.text = "";
-			primeInt=39;
         }
          else if (primeInt == 24)
         {
             Char1name.text = "YOU";
             Char1speech.text = "This is my first time going to a club so...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+         else if (primeInt == 25)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "LIANHUA";
+            Char2speech.text = "Psh, relax! I was just teasing.";
+        }
+         else if (primeInt == 26)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "O-Oh...";
             Char2name.text = "";
             Char2speech.text = "";
 			primeInt=39;
@@ -217,15 +228,13 @@ else if (primeInt == 9)
             Char1speech.text = "";
             Char2name.text = "LIANHUA";
             Char2speech.text = "Man, I bet you were the sheltered kid growing up.";
-			primeInt=39;
         }
         else if (primeInt == 32)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "I wouldn't say that. I just didn't have time to go partying is all.";
+            Char1speech.text = "I wouldn't say that. I just didn't have the time to go partying is all.";
             Char2name.text = "";
             Char2speech.text = "";
-			primeInt=39;
         }
         else if (primeInt == 33)
         {
@@ -233,7 +242,6 @@ else if (primeInt == 9)
             Char1speech.text = "";
             Char2name.text = "LIANHUA";
             Char2speech.text = "You're a bookworm then?";
-			primeInt=39;
         }
         else if (primeInt == 34)
         {
@@ -241,7 +249,6 @@ else if (primeInt == 9)
             Char1speech.text = "";
             Char2name.text = "LIANHUA";
             Char2speech.text = "Grades more important than a social life?";
-			primeInt=39;
         }
         else if (primeInt == 35)
         {
@@ -264,6 +271,8 @@ else if (primeInt == 9)
         }
 else if (primeInt == 41)
         {
+            ArtChar1a.SetActive(false);
+			ArtChar1e.SetActive(true);
             Char1name.text = "YOU";
             Char1speech.text = "[Ah man! that was horrible!]";
             Char2name.text = "";
@@ -278,10 +287,10 @@ else if (primeInt == 41)
         }
 		else if (primeInt == 43)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "You can choose your next case once you're done with your first.";
+            Char1name.text = "YOU";
+            Char1speech.text = "[How embarrassing!]";
+            Char2name.text = "";
+            Char2speech.text = ".";
 			// Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
             allowSpace = false;
@@ -320,7 +329,7 @@ else if (primeInt == 41)
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("Scene1b");
     }
     public void SceneChange2()
     {
