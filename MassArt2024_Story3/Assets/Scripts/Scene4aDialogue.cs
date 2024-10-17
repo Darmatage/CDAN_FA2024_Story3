@@ -147,8 +147,79 @@ else if (primeInt == 9)
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
+            Char2speech.text = "I swear if they're dating the targets I'll-!";
+        }
+       else if (primeInt == 13)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "So...Um..";
+            Char2name.text = "";
             Char2speech.text = "";
         }
+       else if (primeInt == 14)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Can I go on vacation?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+       else if (primeInt == 15)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "What?";
+        }
+       else if (primeInt == 16)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "You know...I worked soooo hard..";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+       else if (primeInt == 17)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "I deserve a vacation, don't you think?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+       else if (primeInt == 18)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "You...";
+        }
+       else if (primeInt == 19)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "Unbelieveable";
+        }
+       else if (primeInt == 20)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "And here I was...about to give you a promotion.";
+        }
+       else if (primeInt == 21)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Promotion??";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+       else if (primeInt == 22)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "Oh well- I'll just give it to a different employee.";
+        }
+       
         else if (primeInt == 13)
         {
             Char1name.text = "";

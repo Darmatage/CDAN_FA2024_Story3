@@ -8,7 +8,9 @@ using UnityEngine.Audio;
 
 public class GameHandler : MonoBehaviour {
 
-        public static int playerStat1;
+        public static int JoeyLove = 0;
+        public static int LianhuaLove = 0;
+        public static int VanessaLove = 0;
 
         public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
