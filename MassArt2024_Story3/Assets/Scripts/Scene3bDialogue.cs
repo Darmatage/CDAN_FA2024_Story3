@@ -81,14 +81,14 @@ public class Scene3bDialogue : MonoBehaviour
             
             DialogueDisplay.SetActive(true);
             Char1name.text = "YOU";
-            Char1speech.text = "OK. I'm at the club. The bartender said Lianhua is in the back room.";
+            Char1speech.text = "OK. I'm at the club. The bartender said Lianhua is in the back.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "Huh. Even their back rooms are filled with neon";
+            Char1speech.text = "Huh. Even their private rooms are filled with neon lights";
             Char2name.text = "";
             Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
