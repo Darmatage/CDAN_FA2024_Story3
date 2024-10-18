@@ -19,8 +19,10 @@ public class Scene3cDialogue : MonoBehaviour
     //public TMP_Text Char3speech;
     public GameObject DialogueDisplay;
     public GameObject ArtChar1a;
-    //public GameObject ArtChar1b;
-    //public GameObject ArtChar2;
+    public GameObject ArtChar1b;
+    public GameObject ArtChar1c;
+    public GameObject ArtChar1d;
+    public GameObject ArtChar1e;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -31,10 +33,13 @@ public class Scene3cDialogue : MonoBehaviour
     private bool allowSpace = true;
 
     // Set initial visibility. Added images or buttons need to also be SetActive(false);
-    void Start()
-    {
-        DialogueDisplay.SetActive(true);
+    void Start(){
+        DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
+		ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
+		ArtChar1d.SetActive(false);
+		ArtChar1e.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
