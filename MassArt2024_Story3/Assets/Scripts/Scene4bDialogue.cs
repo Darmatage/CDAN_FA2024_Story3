@@ -19,8 +19,8 @@ public class Scene4bDialogue : MonoBehaviour
     //public TMP_Text Char3speech;
     public GameObject DialogueDisplay;
     public GameObject ArtChar1a;
-    //public GameObject ArtChar1b;
-    //public GameObject ArtChar2;
+    public GameObject ArtChar1b;
+    public GameObject ArtChar1c;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -31,10 +31,13 @@ public class Scene4bDialogue : MonoBehaviour
     private bool allowSpace = true;
 
     // Set initial visibility. Added images or buttons need to also be SetActive(false);
+    
     void Start()
     {
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
+        ArtChar1b.SetActive(false);
+        ArtChar1c.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -65,17 +68,17 @@ public class Scene4bDialogue : MonoBehaviour
         }
         else if (primeInt == 2)
         {
-            ArtChar1a.SetActive(true);
+            
             DialogueDisplay.SetActive(true);
             Char1name.text = "You";
-            Char1speech.text = "*You were called into your boss’s office.*";
+            Char1speech.text = "Man- Those monsters were hard to capture...";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "*It's your first day on the job as a monster hunter, so naturally you're kind of nervous.";
+            Char1name.text = "You";
+            Char1speech.text = "Even some got away...";
             Char2name.text = "";
             Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
@@ -83,31 +86,111 @@ public class Scene4bDialogue : MonoBehaviour
         else if (primeInt == 4)
         {
             Char1name.text = "You";
-            Char1speech.text = "You wanted to see me Boss?";
+            Char1speech.text = "I hope the Boss won't notice...";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 5)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Yes, I have an assignment for you.";
+            Char1name.text = "You";
+            Char1speech.text = "Who am I kidding- she's going to kill me!!!";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 6)
         {
             Char1name.text = "You";
-            Char1speech.text = "Already?";
+            Char1speech.text = "Fire me like a roasted chicken!!";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 7)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "I mean- if it's not presumtous of me. I just started!";
+            ArtChar1a.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "That's some imagination.";
+        }
+        else if (primeInt == 8)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "EEP!!";
             Char2name.text = "";
             Char2speech.text = "";
         }
+        else if (primeInt == 9)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "B-Boss!!";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 10)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "I don't want to hear it.";
+        }
+       else if (primeInt == 11)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 12)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "God, I can't believe I was desprate enough to trust you with anything...";
+        }
+        else if (primeInt == 13)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 14)
+        {
+            ArtChar1a.SetActive(false);
+            ArtChar1c.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "What are you still standing here for??";
+        }
+        else if (primeInt == 15)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 16)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Am I allowed to talk now, or...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 17)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "GET OUT!!!";
+
+             // Turn off the "Next" button, turn on "Scene" button/s
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene1Button.SetActive(true);
+        }
+    }
+        /*
         else if (primeInt == 8)
         {
             Char1name.text = "";
@@ -190,13 +273,10 @@ public class Scene4bDialogue : MonoBehaviour
         nextButton.SetActive(true);
         allowSpace = true;
     }
-
+*/
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("SceneLose");
     }
-    public void SceneChange2()
-    {
-        SceneManager.LoadScene("Scene2b");
-    }
+
 }
