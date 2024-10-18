@@ -121,6 +121,8 @@ else if (primeInt == 8)
         }
 else if (primeInt == 9)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -128,8 +130,7 @@ else if (primeInt == 9)
         }
         else if (primeInt == 10)
         {
-			ArtChar1a.SetActive(false);
-			ArtChar1b.SetActive(true);
+			
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -165,6 +166,8 @@ else if (primeInt == 9)
         }
        else if (primeInt == 15)
         {
+            ArtChar1c.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -193,6 +196,8 @@ else if (primeInt == 9)
         }
        else if (primeInt == 19)
         {
+            ArtChar1c.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -222,6 +227,8 @@ else if (primeInt == 9)
        
         else if (primeInt == 23)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -238,7 +245,7 @@ else if (primeInt == 9)
         else if (primeInt == 30)
         {
             ArtChar1b.SetActive(false);
-			ArtChar1c.SetActive(true);
+			ArtChar1a.SetActive(true);
             Char1name.text = "You";
             Char1speech.text = "I'll take that promotion, thank you very much.";
             Char2name.text = "";
@@ -277,6 +284,8 @@ else if (primeInt == 9)
         // after choice 1b
         else if (primeInt == 40)
         {	
+            ArtChar1b.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
