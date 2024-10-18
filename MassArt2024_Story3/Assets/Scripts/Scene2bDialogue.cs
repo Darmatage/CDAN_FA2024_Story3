@@ -95,14 +95,14 @@ public class Scene2bDialogue : MonoBehaviour
             
             DialogueDisplay.SetActive(true);
             Char1name.text = "You";
-            Char1speech.text = "Alright, this should be the place.";
+            Char1speech.text = "[Alright, this should be the place.]";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
             Char1name.text = "You";
-            Char1speech.text = "Man it's really crowded. I can barely even hear myself think!";
+            Char1speech.text = "[Man it's really crowded. I can barely even hear myself think!]";
             Char2name.text = "";
             Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
@@ -110,7 +110,7 @@ public class Scene2bDialogue : MonoBehaviour
         else if (primeInt == 4)
         {
             Char1name.text = "You";
-            Char1speech.text = "At least the music is good...";
+            Char1speech.text = "[At least the music is good...]";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -118,21 +118,21 @@ public class Scene2bDialogue : MonoBehaviour
         {
 			ArtChar1e.SetActive(true);
             Char1name.text = "You";
-            Char1speech.text = "Wait a minute... That's my target!";
+            Char1speech.text = "[Wait a minute... That's my target!]";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 6)
         {
             Char1name.text = "You";
-            Char1speech.text = "Ok, ok. Act cool.";
+            Char1speech.text = "[Ok, ok. Act cool.]";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 7)
         {
             Char1name.text = "You";
-            Char1speech.text = "Just approach the bar like a normal person!";
+            Char1speech.text = "[Just approach the bar like a normal person!]";
             Char2name.text = "";
             Char2speech.text = "";
         }
