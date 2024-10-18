@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneLose_JoeyRomance.unity
     guid: ce3ca5ec6a55844bd9af3c93a96fba0f
   - enabled: 1
+    path: Assets/Scenes/SceneLose_BossRomance.unity
+    guid: b532306c811244877befa834390c4daa
+  - enabled: 1
     path: Assets/Scenes/SceneLose_LianhuaRomance.unity
     guid: c41fc48eb22a9954c8b1d10efd68f414
   - enabled: 1

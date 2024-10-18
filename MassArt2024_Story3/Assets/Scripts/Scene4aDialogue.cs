@@ -266,7 +266,7 @@ else if (primeInt == 9)
             Char1speech.text = "Aw man...";
             Char2name.text = "";
             Char2speech.text = "";
-			primeInt=39;
+			//primeInt=39;
 
 // Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
@@ -275,42 +275,42 @@ else if (primeInt == 9)
         }
 
         // after choice 1b
-        else if (primeInt == 30)
+        else if (primeInt == 40)
         {	
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
             Char2speech.text = "Huh?";
         }
-        else if (primeInt == 31)
+        else if (primeInt == 41)
         {	
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
             Char2speech.text = "What ABOUT me?";
         }
-        else if (primeInt == 32)
+        else if (primeInt == 42)
         {	
             Char1name.text = "You";
             Char1speech.text = "Aren't you going on vacation too?";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 33)
+        else if (primeInt == 43)
         {	
             Char1name.text = "You";
             Char1speech.text = "You've worked just as hard as me Boss.";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 34)
+        else if (primeInt == 44)
         {	
             Char1name.text = "You";
             Char1speech.text = "So therefore, you deserve on as much as me.";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 35)
+        else if (primeInt == 45)
         {	
             //ADD BLUSH SPRITE
             Char1name.text = "";
@@ -318,7 +318,7 @@ else if (primeInt == 9)
             Char2name.text = "Boss";
             Char2speech.text = "Oh...";
         }
-        else if (primeInt == 36)
+        else if (primeInt == 46)
         {	
             
             Char1name.text = "";
@@ -326,7 +326,7 @@ else if (primeInt == 9)
             Char2name.text = "Boss";
             Char2speech.text = "I can't possiby...";
         }
-        else if (primeInt == 37)
+        else if (primeInt == 47)
         {	
             
             Char1name.text = "";
@@ -334,7 +334,7 @@ else if (primeInt == 9)
             Char2name.text = "Boss";
             Char2speech.text = "There's so much to do...Monsters to capture.";
         }
-        else if (primeInt == 38)
+        else if (primeInt == 48)
         {	
             
             Char1name.text = "You";
@@ -342,7 +342,7 @@ else if (primeInt == 9)
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 39)
+        else if (primeInt == 49)
         {	
             
             Char1name.text = "You";
@@ -350,7 +350,7 @@ else if (primeInt == 9)
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 40)
+        else if (primeInt == 50)
         {	
             
             Char1name.text = "";
@@ -358,7 +358,7 @@ else if (primeInt == 9)
             Char2name.text = "Boss";
             Char2speech.text = "Oh..well...alright...";
         }
-        else if (primeInt == 41)
+        else if (primeInt == 51)
         {	
             
             Char1name.text = "You";
@@ -366,17 +366,22 @@ else if (primeInt == 9)
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 42)
+        else if (primeInt == 52)
         {
             //blush sprite
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
             Char2speech.text = "Watch it rookie.";
-			primeInt=59;
+			//primeInt=59;
+            // Turn off the "Next" button, turn on "Scene" button/s
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene2Button.SetActive(true);
         }
 
 	//after both choices:
+    /*
 	    else if (primeInt == 60)
         {
 			ArtChar1c.SetActive(false);
@@ -408,7 +413,7 @@ else if (primeInt == 61)
             Char2speech.text = "You can choose your next case once you're done with your first.";
 			
         }
-
+*/
 
         //Please do NOT delete this final bracket that ends the Next() function:
     }
@@ -441,10 +446,10 @@ else if (primeInt == 61)
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("Scene2a");
+        SceneManager.LoadScene("SceneWin");
     }
     public void SceneChange2()
     {
-        SceneManager.LoadScene("Scene2b");
+        SceneManager.LoadScene("SceneLose_BossRomance");
     }
 }
