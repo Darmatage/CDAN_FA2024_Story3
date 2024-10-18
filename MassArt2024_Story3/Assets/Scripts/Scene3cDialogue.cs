@@ -33,7 +33,7 @@ public class Scene3cDialogue : MonoBehaviour
     // Set initial visibility. Added images or buttons need to also be SetActive(false);
     void Start()
     {
-        DialogueDisplay.SetActive(false);
+        DialogueDisplay.SetActive(true);
         ArtChar1a.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
@@ -67,88 +67,82 @@ public class Scene3cDialogue : MonoBehaviour
         {
             ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
-            Char1name.text = "You";
-            Char1speech.text = "*You were called into your boss’s office.*";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Hey stranger!";
         }
         else if (primeInt == 3)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "*It's your first day on the job as a monster hunter, so naturally you're kind of nervous.";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "The show was incredible!! The lights- The ambience-";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 4)
         {
-            Char1name.text = "You";
-            Char1speech.text = "You wanted to see me Boss?";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 5)
-        {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Boss";
-            Char2speech.text = "Yes, I have an assignment for you.";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Did you enjoy the show?";
+        }
+        
+        else if (primeInt == 5)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "It was amazing!";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
         else if (primeInt == 6)
         {
-            Char1name.text = "You";
-            Char1speech.text = "Already?";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Oh joy!";
         }
         else if (primeInt == 7)
         {
-            Char1name.text = "YOU";
-            Char1speech.text = "I mean- if it's not presumtous of me. I just started!";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-        else if (primeInt == 8)
-        {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Do not play the stupid. You will take me to him.";
-            // Turn off the "Next" button, turn on "Choice" buttons
+            Char2name.text = "Vanessa";
+            Char2speech.text = "What was your favorite song- I must know!";
             nextButton.SetActive(false);
             allowSpace = false;
             Choice1a.SetActive(true); // function Choice1aFunct()
             Choice1b.SetActive(true); // function Choice1bFunct()
         }
+        else if (primeInt == 20)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "Catching stars was pretty good!";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
 
         // after choice 1a
-        else if (primeInt == 20)
+        else if (primeInt == 21)
         {
             //gameHandler.AddPlayerStat(1);
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Then you are no use to me, and must be silenced.";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "That is not a song I performed...";
         }
-        else if (primeInt == 21)
+        else if (primeInt == 22)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Come back here! Do not think you can hide from me!";
-            // Turn off the "Next" button, turn on "Scene" button/s
-            nextButton.SetActive(false);
-            allowSpace = false;
-            NextScene1Button.SetActive(true);
+            Char2name.text = "Vanessa";
+            Char2speech.text = "[hangs head low]";
         }
-
-        // after choice 1b
-        else if (primeInt == 30)
+        else if (primeInt == 22)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "Jeda";
-            Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "My mask! Don't look at me! I'm hideous!";
         }
         else if (primeInt == 31)
         {
@@ -169,7 +163,7 @@ public class Scene3cDialogue : MonoBehaviour
     public void Choice1aFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "I don't know what you're talking about!";
+        Char1speech.text = "Catching stars";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 19;
@@ -181,7 +175,7 @@ public class Scene3cDialogue : MonoBehaviour
     public void Choice1bFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "Sure, anything you want... just lay off the club.";
+        Char1speech.text = "Sing with me";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 29;

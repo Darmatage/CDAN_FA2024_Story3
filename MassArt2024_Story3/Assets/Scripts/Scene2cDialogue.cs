@@ -91,7 +91,7 @@ public class Scene2cDialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
-            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
@@ -115,6 +115,8 @@ public class Scene2cDialogue : MonoBehaviour
         }
     else if (primeInt == 7)
         {
+            ArtChar1b.SetActive(false);
+            ArtChar1a.SetActive(true);   
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
@@ -137,53 +139,76 @@ public class Scene2cDialogue : MonoBehaviour
 
 //after choice 1a:
 
-        else if (primeInt == 20)
+        else if (primeInt == 30)
         {
+            ArtChar1c.SetActive(true);
+            ArtChar1b.SetActive(false);   
             GameHandler.VanessaLove +=1;
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "";
+            Char2speech.text = " Why do you want my autograph then?";
+             nextButton.SetActive(false);
+            allowSpace = false;
+            Choice2a.SetActive(true); // function Choice2aFunct()
+            Choice2b.SetActive(true); // function Choice2bFunct()
         }
-else if (primeInt == 21)
+else if (primeInt == 31)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = " Are you familiar with my music?";
         }
+else if (primeInt == 20)
+        {
+            ArtChar1b.SetActive(true);
+            ArtChar1a.SetActive(false);    
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Oh joy!";
+        }
+
+        else if (primeInt == 21)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Would you like to come to my concert this friday?";
+        }
+
 else if (primeInt == 22)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "";
-            primeInt=39;
+            Char2speech.text = "It should be spectacular!";
         }
-
-//after choice 1b:
-        else if (primeInt == 30)
+         
+else if (primeInt == 50)
         {
-            GameHandler.VanessaLove -=1;
+            ArtChar1b.SetActive(false);
+            ArtChar1d.SetActive(true);   
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Liar!";
+        }
+else if (primeInt == 51)
+        {
+           
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Keep your story straight!";
+        }
+ else if (primeInt == 41)
+        {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
             Char2speech.text = "";
-        }
-else if (primeInt == 31)
-        {
-            Char1name.text = "YOU";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-else if (primeInt == 32)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Vanessa";
-            Char2speech.text = "";
-            primeInt=39;
         }
 
 //after both choices 1a and 1b
@@ -253,12 +278,10 @@ else if (primeInt == 32)
         nextButton.SetActive(true);
         allowSpace = true;
     }
-
-   // FUNCTIONS 2a and 22b
     public void Choice2aFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "";
+        Char1speech.text = "Not really but I recognize you.";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 39;
@@ -270,7 +293,7 @@ else if (primeInt == 32)
     public void Choice2bFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "";
+        Char1speech.text = "I am familiar with your music(LIE).";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 49;
