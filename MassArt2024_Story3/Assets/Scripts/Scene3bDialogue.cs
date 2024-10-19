@@ -354,7 +354,7 @@ else if (primeInt == 36)
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
-            Char2speech.text = "Are you an Officer?";
+            Char2speech.text = "Are you an officer?";
         }
  else if (primeInt == 40)
         {
@@ -385,29 +385,221 @@ else if (primeInt == 36)
             Choice1b.SetActive(true); // function Choice1bFunct()
         }
 
-        // after choice 1a
+        // after choice 1a 50
         else if (primeInt == 50)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 51)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "[Shoot! I totally forgot this is one of my first few cases!]";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 52)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "[I don't have any stories to share!]";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 53)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "[Too late now- I'll just referance my other cases.]";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 54)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "I was in hot pursuit of this one criminal.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 55)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Uh huh.";
+        }
+        else if (primeInt == 56)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "I almost had him!";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 57)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "But then he slipped out of my grasp.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 58)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "What a slimy fellow...";
+        }
+        else if (primeInt == 59)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Yeah! He was really slimy!";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 60)
+        {
+            ArtChar1a.SetActive(false);
+			ArtChar1f.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "...";
+        }
+        else if (primeInt == 61)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "[Was that too boring?]";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 62)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "[Let's try a different story.]";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 63)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Then there was this, uh, girl!";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 64)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Her case was a bit more difficult.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 65)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "But I managed, and brought her to justice!";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 66)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Shame that she was, um, this popular singer.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 67)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Popular singer huh?";
+        }
+        else if (primeInt == 68)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "I bet she was out of this world.";
+        }
+        else if (primeInt == 69)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Mhm, her music was quite alien to me though-";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 70)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Alien?";
+        }
+        else if (primeInt == 71)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Yeah! I've never heard anything like it before.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 72)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "She even looked a bit weird too.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 73)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Like she was an alien?";
+        }
+        else if (primeInt == 74)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Actually no, it turns out she WAS an alien.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 75)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "That's why I had to arrest her-";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        
+        else if (primeInt == 76)
         {
 			ArtChar1c.SetActive(false);
 			ArtChar1g.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
-            Char2speech.text = "Oh, REALLY...";
+            Char2speech.text = "Oh, really...";
         }
-		else if (primeInt == 51)
+		else if (primeInt == 77)
         {
             Char1name.text = "You";
             Char1speech.text = "AH- Wait! I can explain!";
             Char2name.text = "";
             Char2speech.text = "";
         }
-        else if (primeInt == 52)
+        else if (primeInt == 78)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
-            Char2speech.text = "No, I think you said enough.";
+            Char2speech.text = "That you hunt monsters?";
+        }
+        else if (primeInt == 79)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "No thanks, I think you said enough.";
             // Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
             allowSpace = false;
@@ -415,14 +607,14 @@ else if (primeInt == 36)
         }
 
         // after choice 1b
-        else if (primeInt == 30)
+        else if (primeInt == 90)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
             Char2speech.text = "Oh, you're no fun...";
         }
-        else if (primeInt == 31)
+        else if (primeInt == 91)
         {
             Char1name.text = "You";
             Char1speech.text = "I am arresting the right person now!.";
@@ -440,6 +632,8 @@ else if (primeInt == 36)
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
     public void Choice1aFunct()
     {
+        ArtChar1c.SetActive(false);
+		ArtChar1a.SetActive(true);
         Char1name.text = "You";
         Char1speech.text = "Well there was this one time...";
         Char2name.text = "";
@@ -456,7 +650,7 @@ else if (primeInt == 36)
         Char1speech.text = "I got nothing at the moment.";
         Char2name.text = "";
         Char2speech.text = "";
-        primeInt = 39;
+        primeInt = 89;
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
         nextButton.SetActive(true);
