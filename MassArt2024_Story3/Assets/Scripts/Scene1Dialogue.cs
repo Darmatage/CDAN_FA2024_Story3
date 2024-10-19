@@ -108,7 +108,7 @@ public class Scene1Dialogue : MonoBehaviour
         else if (primeInt == 7)
         {
             Char1name.text = "YOU";
-            Char1speech.text = "I mean- if it's not presumtous of me. I just started!";
+            Char1speech.text = "I mean- if it's not presumptuous of me. I just started!";
             Char2name.text = "";
             Char2speech.text = "";
         }

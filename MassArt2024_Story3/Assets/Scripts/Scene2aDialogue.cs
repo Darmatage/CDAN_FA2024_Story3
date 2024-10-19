@@ -29,6 +29,7 @@ public class Scene2aDialogue : MonoBehaviour
     public GameObject Choice1b;
     public GameObject Choice2a;
     public GameObject Choice2b;
+    public GameObject Choice3;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
 	/*
@@ -53,6 +54,7 @@ public class Scene2aDialogue : MonoBehaviour
         Choice1b.SetActive(false);
 		Choice2a.SetActive(false);
         Choice2b.SetActive(false);
+        Choice3.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
 		/*
@@ -201,8 +203,24 @@ public class Scene2aDialogue : MonoBehaviour
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true);
+              // Turn off the "Next" button, turn on "Scene" button/s
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice3.SetActive(true);
 
         }
+
+        //after choice3
+
+        else if (primeInt == 100)
+		{
+            
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Joey";
+                Char2speech.text = "WAIT!! THAT RHYMED!!!";
+
+		}
 
         // after choice 1b
         else if (primeInt == 30)
@@ -604,7 +622,18 @@ else if (primeInt == 80)
 		nextButton.SetActive(true);
 		allowSpace = true;
 	}
-
+public void Choice3Funct()
+	{
+		Char1name.text = "YOU";
+		Char1speech.text = "Uhhh..Wait!!";
+		Char2name.text = "";
+		Char2speech.text = "";
+		primeInt = 99;
+		Choice2a.SetActive(false);
+		Choice3.SetActive(false);
+		nextButton.SetActive(true);
+		allowSpace = true;
+	}
 
 
     public void SceneChange1()
