@@ -30,6 +30,7 @@ public class Scene2cDialogue : MonoBehaviour
     public GameObject Choice2b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
+    public GameObject NextScene3Button;
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
@@ -50,6 +51,7 @@ public class Scene2cDialogue : MonoBehaviour
         Choice2b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
+        NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -105,7 +107,7 @@ public class Scene2cDialogue : MonoBehaviour
             Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
         }
-    else if (primeInt == 6)
+        else if (primeInt == 6)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -113,7 +115,7 @@ public class Scene2cDialogue : MonoBehaviour
             Char2speech.text = "I sure do love music! Especially since I'm an artist ahaha!";
             //gameHandler.AddPlayerStat(1);
         }
-    else if (primeInt == 7)
+        else if (primeInt == 7)
         {
             ArtChar1b.SetActive(false);
             ArtChar1a.SetActive(true);   
@@ -137,30 +139,37 @@ public class Scene2cDialogue : MonoBehaviour
         }
 
 
-//after choice 1a:
+        //after choice 1a:
 
         else if (primeInt == 30)
         {
             ArtChar1c.SetActive(true);
             ArtChar1b.SetActive(false);   
-            GameHandler.VanessaLove +=1;
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = " Why do you want my autograph then?";
-             nextButton.SetActive(false);
-            allowSpace = false;
-            Choice2a.SetActive(true); // function Choice2aFunct()
-            Choice2b.SetActive(true); // function Choice2bFunct()
+            Char2speech.text = "Why do you want my autograph then?";
         }
-else if (primeInt == 31)
+        else if (primeInt == 31)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = " Are you familiar with my music?";
+            Char2speech.text = "Are you familiar with my music?";
         }
-else if (primeInt == 20)
+
+        else if (primeInt == 32)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice2a.SetActive(true); // function Choice2aFunct()
+            Choice2b.SetActive(true); // function Choice2bFunct()
+        }
+        else if (primeInt == 20)
         {
             ArtChar1b.SetActive(true);
             ArtChar1a.SetActive(false);    
@@ -178,15 +187,73 @@ else if (primeInt == 20)
             Char2speech.text = "Would you like to come to my concert this friday?";
         }
 
-else if (primeInt == 22)
+        else if (primeInt == 22)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
             Char2speech.text = "It should be spectacular!";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene2Button.SetActive(true);
         }
+          else if (primeInt == 23)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene1Button.SetActive(true);
+            NextScene2Button.SetActive(true);
+        }  
          
-else if (primeInt == 50)
+
+        
+        }  
+         else if (primeInt == 40)
+        {
+            ArtChar1a.SetActive(true)  
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "I appreciate your honesty stranger!";
+        }
+
+        else if (primeInt == 41)
+        {
+            
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Would you like to come to my concert this friday?";
+        }
+
+        else if (primeInt == 42)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "It should be spectacular!";
+            nextButton.SetActive(false);
+            allowSpace = false;
+
+        }
+ 
+        else if (primeInt == 43)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene1Button.SetActive(true);
+            NextScene2Button.SetActive(true);
+        }  
+         
+        else if (primeInt == 50)
         {
             ArtChar1b.SetActive(false);
             ArtChar1d.SetActive(true);   
@@ -195,59 +262,29 @@ else if (primeInt == 50)
             Char2name.text = "Vanessa";
             Char2speech.text = "Liar!";
         }
-else if (primeInt == 51)
+        else if (primeInt == 51)
         {
-           
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
             Char2speech.text = "Keep your story straight!";
-        }
- else if (primeInt == 41)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Vanessa";
-            Char2speech.text = "";
-        }
-
-//after both choices 1a and 1b
-        else if (primeInt == 40)
-        {
-			ArtChar1a.SetActive(false);
-			ArtChar1b.SetActive(true);
-            Char1name.text = "You";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-  else if (primeInt == 41)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Vanessa";
-            Char2speech.text = "";
-        }
-  else if (primeInt == 42)
-        {
-            Char1name.text = "You";
-            Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
-        }
-
-		else if (primeInt == 43)
-        {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Vanessa";
-            Char2speech.text = "";
-			// Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene1Button.SetActive(true);
             NextScene2Button.SetActive(true);
         }
+
+        else if (primeInt == 52)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            // Turn off the "Next" button, turn on "Scene" button/s
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene3Button.SetActive(true);
+        }  
+
 
 
         //Please do NOT delete this final bracket that ends the Next() function:
@@ -303,15 +340,16 @@ else if (primeInt == 51)
         allowSpace = true;
     }
 
-//go to concert
+    //go to concert
     public void SceneChange1()
     {
         SceneManager.LoadScene("Scene3c");
     }
 
-//abadon file
+    //abadon file
     public void SceneChange2()
     {
         SceneManager.LoadScene("Scene1b");
     }
+
 }
