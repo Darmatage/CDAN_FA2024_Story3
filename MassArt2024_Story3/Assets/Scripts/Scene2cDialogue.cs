@@ -209,12 +209,9 @@ public class Scene2cDialogue : MonoBehaviour
             NextScene2Button.SetActive(true);
         }  
          
-
-        
-        }  
          else if (primeInt == 40)
         {
-            ArtChar1a.SetActive(true)  
+            ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
