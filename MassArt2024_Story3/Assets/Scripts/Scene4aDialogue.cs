@@ -153,7 +153,7 @@ else if (primeInt == 9)
        else if (primeInt == 13)
         {
             Char1name.text = "You";
-            Char1speech.text = "So...Um..";
+            Char1speech.text = "So...Um...";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -176,7 +176,7 @@ else if (primeInt == 9)
        else if (primeInt == 16)
         {
             Char1name.text = "You";
-            Char1speech.text = "You know...I worked soooo hard..";
+            Char1speech.text = "You know...I worked soooo hard...";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -201,7 +201,7 @@ else if (primeInt == 9)
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
-            Char2speech.text = "Unbelieveable";
+            Char2speech.text = "Unbelieveable.";
         }
        else if (primeInt == 20)
         {
@@ -222,7 +222,7 @@ else if (primeInt == 9)
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
-            Char2speech.text = "Oh well- I'll just give it to a different employee.";
+            Char2speech.text = "Oh well, I'll just give it to a different employee.";
         }
        
         else if (primeInt == 23)
@@ -315,7 +315,7 @@ else if (primeInt == 9)
         else if (primeInt == 44)
         {	
             Char1name.text = "You";
-            Char1speech.text = "So therefore, you deserve on as much as me.";
+            Char1speech.text = "So therefore, you deserve one as much as me.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -365,7 +365,7 @@ else if (primeInt == 9)
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
-            Char2speech.text = "Oh..well...alright...";
+            Char2speech.text = "Oh... Well...alright...";
         }
         else if (primeInt == 51)
         {	
