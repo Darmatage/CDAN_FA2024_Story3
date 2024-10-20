@@ -32,6 +32,11 @@ public class Scene3bDialogue : MonoBehaviour
     public GameObject Choice1b;
     public GameObject Choice2a;
     public GameObject Choice2b;
+    public GameObject Choice3a;
+    public GameObject Choice3b;
+    //public GameObject Choice4a;
+    //public GameObject Choice4b;
+    //public GameObject Choice5a;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject nextButton;
@@ -55,6 +60,11 @@ public class Scene3bDialogue : MonoBehaviour
         Choice1b.SetActive(false);
         Choice2a.SetActive(false);
         Choice2b.SetActive(false);
+        Choice3a.SetActive(false);
+        Choice3b.SetActive(false);
+        //Choice4a.SetActive(false);
+        //Choice4b.SetActive(false);
+        //Choice5a.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         nextButton.SetActive(true);
@@ -956,9 +966,50 @@ else if (primeInt == 103)
             Char1speech.text = "[This is my chance...]";
             Char2name.text = "";
             Char2speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice3a.SetActive(true); 
+            Choice3b.SetActive(true);
         }
 
-
+//after choice 3a
+		else if (primeInt == 160)
+		{
+            ArtChar1c.SetActive(false);
+            ArtChar1b.SetActive(false);
+			ArtChar1f.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "...";
+		}
+        else if (primeInt == 161)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "You are in violation of impersonating a human being. I'm taking you in.";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 162)
+		{
+            ArtChar1f.SetActive(false);
+			ArtChar1g.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "You seem to be forgetting a major detail, <i>Detective.<i>";
+		}
+        else if (primeInt == 163)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "The door is locked.";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene1Button.SetActive(true);
+		}
+        
 
 
 
@@ -1021,6 +1072,37 @@ public void Choice2aFunct()
         nextButton.SetActive(true);
         allowSpace = true;
     }
+
+// third story choice for scene3b
+
+public void Choice3aFunct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "You're under arrest monster!!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 159;
+        Choice3a.SetActive(false);
+        Choice3b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void Choice3bFunct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "What's your favorite animal?";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 129;
+        Choice3a.SetActive(false);
+        Choice3b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+
+
+
+
 
 
 
