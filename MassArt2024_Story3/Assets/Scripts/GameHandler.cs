@@ -82,7 +82,17 @@ public class GameHandler : MonoBehaviour {
         public void RestartGame(){
                 Time.timeScale = 1f;
                 SceneManager.LoadScene("MainMenu");
-                // Please also reset all static variables here, for new games!
+                // Reset all static variables here, for new games!
+				JoeyLove = 0;
+				LianhuaLove = 0;
+				VanessaLove = 0;
+				JoeyAbandoned = false;
+				LianhuaAbandoned = false;
+				VanessaAbandoned = false;
+				JoeyArrested = false;
+				LianhuaArrested = false;
+				VanessaArrested = false;
+				GameisPaused = false;
         }
 
         public void QuitGame(){

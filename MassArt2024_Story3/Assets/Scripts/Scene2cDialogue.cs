@@ -132,7 +132,7 @@ public class Scene2cDialogue : MonoBehaviour
             Char2speech.text = "I love giving out items to my fans!";
             //gameHandler.AddPlayerStat(1);
         }
-        else if (primeInt == 8)
+        else if (primeInt == 9)
         {
             ArtChar1b.SetActive(false);
             ArtChar1a.SetActive(true);   
@@ -142,7 +142,7 @@ public class Scene2cDialogue : MonoBehaviour
             Char2speech.text = "Have you heard my new single yet?";
             //gameHandler.AddPlayerStat(1);
         }
-        else if (primeInt == 8)
+        else if (primeInt == 10)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -387,8 +387,15 @@ public class Scene2cDialogue : MonoBehaviour
         SceneManager.LoadScene("Scene3c");
     }
 
-    //abadon file
+    //abandon file
     public void SceneChange2()
+    {
+        GameHandler.VanessaAbandoned = true;
+        SceneManager.LoadScene("Scene1b");
+    }
+
+//[what is this one for...?]
+	public void SceneChange3()
     {
         GameHandler.VanessaAbandoned = true;
         SceneManager.LoadScene("Scene1b");
