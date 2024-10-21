@@ -1856,10 +1856,11 @@ public void Choice6aFunct()
     }
     public void SceneChange2()
     {
+        GameHandler.LianhuaArrested = true;
         SceneManager.LoadScene("Scene1b");
     }
     public void SceneChange3()
     {
-        SceneManager.LoadScene("SceneLose_JoeyRomance");
+        SceneManager.LoadScene("SceneLose_LianhuaRomance");
     }
 }
