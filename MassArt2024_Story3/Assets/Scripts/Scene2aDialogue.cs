@@ -25,6 +25,7 @@ public class Scene2aDialogue : MonoBehaviour
     public GameObject ArtChar1e;
     public GameObject ArtChar1f;
     public GameObject ArtChar1g;
+    public GameObject ArtChar1h;
     //public GameObject ArtChar2;
     public GameObject ArtBG1;
     public GameObject Choice1a;
@@ -53,6 +54,7 @@ public class Scene2aDialogue : MonoBehaviour
         ArtChar1e.SetActive(false);
         ArtChar1f.SetActive(false);
         ArtChar1g.SetActive(false);
+        ArtChar1h.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
