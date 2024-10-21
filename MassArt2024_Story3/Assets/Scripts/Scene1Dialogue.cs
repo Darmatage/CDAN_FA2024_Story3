@@ -21,6 +21,8 @@ public class Scene1Dialogue : MonoBehaviour
     public GameObject ArtChar1a;
     public GameObject ArtChar1b;
     public GameObject ArtChar1c;
+    public GameObject ArtChar1d;
+    public GameObject ArtChar1e;
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -37,6 +39,8 @@ public class Scene1Dialogue : MonoBehaviour
         ArtChar1a.SetActive(false);
 		ArtChar1b.SetActive(false);
 		ArtChar1c.SetActive(false);
+        ArtChar1d.SetActive(false);
+        ArtChar1e.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
