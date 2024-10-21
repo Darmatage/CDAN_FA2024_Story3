@@ -23,6 +23,8 @@ public class Scene3aDialogue : MonoBehaviour
     public GameObject ArtChar1c;
     public GameObject ArtChar1d;
     public GameObject ArtChar1e;
+    public GameObject ArtChar1f;
+    public GameObject ArtChar1g;
     public GameObject ArtBG1;
     public GameObject ArtBG2;
     public GameObject Choice1a;
@@ -48,6 +50,8 @@ public class Scene3aDialogue : MonoBehaviour
 		ArtChar1c.SetActive(false);
         ArtChar1d.SetActive(false);
         ArtChar1e.SetActive(false);
+        ArtChar1f.SetActive(false);
+        ArtChar1g.SetActive(false);
         ArtBG1.SetActive(true);
         ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
