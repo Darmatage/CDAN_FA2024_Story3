@@ -390,6 +390,7 @@ public class Scene2cDialogue : MonoBehaviour
     //abadon file
     public void SceneChange2()
     {
+        GameHandler.VanessaAbandoned = true;
         SceneManager.LoadScene("Scene1b");
     }
 
