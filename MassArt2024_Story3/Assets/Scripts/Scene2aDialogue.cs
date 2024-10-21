@@ -215,12 +215,42 @@ public class Scene2aDialogue : MonoBehaviour
         else if (primeInt == 100)
 		{
             
+                Char1name.text = "You";
+                Char1speech.text = "You look really familiar...have we met?";
+                Char2name.text = "";
+                Char2speech.text = "";
+
+		}
+         else if (primeInt == 101)
+		{
+            
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Joey";
-                Char2speech.text = "WAIT!! THAT RHYMED!!!";
+                Char2speech.text = "Mmmmm- Not that my slimy- I MEAN HUMAN EYES recall?";
 
 		}
+         else if (primeInt == 102)
+		{
+            
+                Char1name.text = "You";
+                Char1speech.text = "YES!! We met at that faculty thing last year!";
+                Char2name.text = "";
+                Char2speech.text = "";
+
+		}
+ else if (primeInt == 103)
+		{
+            
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Joey";
+                Char2speech.text = "...";
+                 primeInt = 36;
+
+		}
+
+
 
         // after choice 1b
         else if (primeInt == 30)
@@ -631,6 +661,7 @@ public void Choice3Funct()
 		primeInt = 99;
 		Choice2a.SetActive(false);
 		Choice3.SetActive(false);
+        NextScene1Button.SetActive(false);
 		nextButton.SetActive(true);
 		allowSpace = true;
 	}
