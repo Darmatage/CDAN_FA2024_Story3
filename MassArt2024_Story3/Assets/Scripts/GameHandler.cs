@@ -12,6 +12,16 @@ public class GameHandler : MonoBehaviour {
         public static int LianhuaLove = 0;
         public static int VanessaLove = 0;
 
+        public static bool JoeyAbandoned = false;
+        public static bool LianhuaAbandoned = false;
+        public static bool VanessaAbandoned = false;
+
+        //conditions for promotion
+        public static bool JoeyArrested = false;
+        public static bool LianhuaArrested = false;
+        public static bool VanessaArrested = false;
+
+
         public static bool GameisPaused = false;
         public GameObject pauseMenuUI;
         public AudioMixer mixer;

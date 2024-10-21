@@ -27,9 +27,22 @@ public class Scene1bDialogue : MonoBehaviour
     //public GameObject NextScene1Button;
     //public GameObject NextScene2Button;
 	//public GameObject NextScene3Button;
+
+    //open the file folders:
 	public GameObject OpenJoeyButton;
     public GameObject OpenLianhuaButton;
 	public GameObject OpenVanessaButton;
+
+    //display the investigate buttons:
+	public GameObject investigateJoey;
+    public GameObject investigateLianhua;
+	public GameObject investigateVanessa;
+
+    //display the arrested labels:
+	public GameObject arrestedJoeyLabel;
+    public GameObject arrestedLianhuaLabel;
+	public GameObject arrestedVanessaLabel;
+
     public GameObject nextButton;
     public AudioSource SFX_pageflip;
     private bool allowSpace = true;
@@ -48,6 +61,28 @@ public class Scene1bDialogue : MonoBehaviour
         //NextScene2Button.SetActive(true);
 		//NextScene3Button.SetActive(true);
         nextButton.SetActive(true);
+
+
+        if(GameHandler.JoeyAbandoned == false){investigateJoey.SetActive(true);
+        } else {investigateJoey.SetActive(false);}
+
+       if(GameHandler.LianhuaAbandoned == false){investigateLianhua.SetActive(true);
+        } else {investigateLianhua.SetActive(false);}
+
+        if(GameHandler.VanessaAbandoned == false){investigateVanessa.SetActive(true);
+        } else {investigateVanessa.SetActive(false);}
+
+//arrested labels:
+        if(GameHandler.JoeyArrested == false){arrestedJoeyLabel.SetActive(false);
+        } else {arrestedJoeyLabel.SetActive(true);}
+
+       if(GameHandler.LianhuaArrested == false){arrestedLianhuaLabel.SetActive(false);
+        } else {arrestedLianhuaLabel.SetActive(true);}
+
+        if(GameHandler.VanessaArrested == false){arrestedVanessaLabel.SetActive(false);
+        } else {arrestedVanessaLabel.SetActive(true);}
+        
+
     }
 
     // Use the spacebar as a faster "Next" button:

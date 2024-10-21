@@ -703,6 +703,7 @@ public void Choice3Funct()
 
     public void SceneChange1()
     {
+        GameHandler.JoeyAbandoned = true;
         SceneManager.LoadScene("Scene1b");
     }
     public void SceneChange2()

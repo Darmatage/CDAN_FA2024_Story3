@@ -801,6 +801,7 @@ else if (primeInt == 153)
 
     public void SceneChange1()
     {
+        GameHandler.LianhuaAbandoned = true;
         SceneManager.LoadScene("Scene1b");
     }
     public void SceneChange2()

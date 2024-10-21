@@ -925,6 +925,7 @@ public void Choice2aFunct()
     }
     public void SceneChange1()
     {
+        GameHandler.JoeyArrested = true;
         SceneManager.LoadScene("Scene1b");
     }
     public void SceneChange2()
@@ -933,6 +934,7 @@ public void Choice2aFunct()
     }
     public void SceneChange3()
     {
+        GameHandler.JoeyAbandoned = true;
         SceneManager.LoadScene("Scene1b");
     }
 }
