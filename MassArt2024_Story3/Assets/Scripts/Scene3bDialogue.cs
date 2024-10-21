@@ -38,9 +38,12 @@ public class Scene3bDialogue : MonoBehaviour
     public GameObject Choice4b;
     public GameObject Choice5a;
     public GameObject Choice5b;
+    public GameObject Choice6a;
+    public GameObject Choice6b;
 
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
+    public GameObject NextScene3Button;
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
@@ -68,8 +71,11 @@ public class Scene3bDialogue : MonoBehaviour
         Choice4b.SetActive(false);
         Choice5a.SetActive(false);
         Choice5b.SetActive(false);
+        Choice6a.SetActive(false);
+        Choice6b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
+        NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -1357,7 +1363,7 @@ else if (primeInt == 103)
             Choice5b.SetActive(true);
 		}
         
-    //after choice 5a
+//after choice 5a
 		else if (primeInt == 230)
 		{
             Char1name.text = "You";
@@ -1391,6 +1397,285 @@ else if (primeInt == 103)
 		}
 
 
+//after choice 5b
+		else if (primeInt == 240)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "I can't do that...";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 241)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Oh~?";
+		}
+        else if (primeInt == 242)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Why the sudden change in heart?";
+		}
+        else if (primeInt == 243)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "I'm giving you an easy way out after all.";
+		}
+        else if (primeInt == 244)
+		{
+            ArtChar1c.SetActive(false);
+			ArtChar1a.SetActive(true);
+            Char1name.text = "You";
+            Char1speech.text = "But you didn't do anything wrong...";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 245)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "I'll feel guilty if I do...";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 246)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Hmm...";
+		}
+        else if (primeInt == 247)
+		{
+            ArtChar1a.SetActive(false);
+			ArtChar1e.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Debatable.";
+		}
+        else if (primeInt == 248)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "H-Huh?!";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 249)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "You want to get arrested or something??";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 250)
+		{
+            ArtChar1e.SetActive(false);
+			ArtChar1a.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Not what I meant.";
+		}
+        else if (primeInt == 251)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "What I mean is that not every monster is innocent.";
+		}
+        else if (primeInt == 252)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "I would know. I'm one of them.";
+		}
+        else if (primeInt == 253)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "But you're just minding your own business.";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 254)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "It was me who essentially barged into your life, trying to arrest you for just existing...";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 255)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "...";
+		}
+         else if (primeInt == 256)
+		{
+            ArtChar1a.SetActive(false);
+			ArtChar1e.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "<i>Sigh</i>";
+		}
+         else if (primeInt == 257)
+		{
+            ArtChar1e.SetActive(false);
+			ArtChar1b.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "You are indeed an interesting human.";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice6a.SetActive(true); 
+            Choice6b.SetActive(true);
+		}
+
+//after choice 6a
+		else if (primeInt == 260)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Because it's true~";
+		}
+        else if (primeInt == 261)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "Hm";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 262)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "Debatable.";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 263)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Pfft! Using my words against me now are we?";
+		}
+        else if (primeInt == 264)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "Consider this payback for putting me through the wringer.";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 265)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Alright alright, my bad~";
+		}
+        else if (primeInt == 266)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "Haha.";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 267)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "I'll see you around?";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 268)
+		{
+            ArtChar1b.SetActive(false);
+			ArtChar1c.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "With your line of work? I hope not.";
+		}
+        else if (primeInt == 269)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "Haha! Fair enough.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene2Button.SetActive(true);
+		}
+
+//after choice 6b
+		else if (primeInt == 280)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "You know, now that I think about it, I never gave you my name.";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 281)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Guess not...";
+		}
+        else if (primeInt == 282)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "Don't worry though, you can just call me 'yours'~";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 283)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "...";
+		}
+        else if (primeInt == 284)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "...";
+            Char2name.text = "";
+            Char2speech.text = "";
+		}
+        else if (primeInt == 285)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "...";
+		}
+        else if (primeInt == 286)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Well damn!!";
+		}
+        else if (primeInt == 287)
+		{
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Lianhua";
+            Char2speech.text = "Ok! Take me out to dinner first!";
+             nextButton.SetActive(false);
+            allowSpace = (false);
+            NextScene3Button.SetActive(true);
+		}
 
 
 
@@ -1530,9 +1815,36 @@ public void Choice5aFunct()
         Char1speech.text = "I...";
         Char2name.text = "";
         Char2speech.text = "";
-        primeInt = 219;
+        primeInt = 239;
         Choice5a.SetActive(false);
         Choice5b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+
+    // sixth story choice for scene3b
+
+public void Choice6aFunct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "You said that already";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 259;
+        Choice6a.SetActive(false);
+        Choice6b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+    public void Choice6bFunct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "I guess so.";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 279;
+        Choice6a.SetActive(false);
+        Choice6b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
@@ -1545,5 +1857,9 @@ public void Choice5aFunct()
     public void SceneChange2()
     {
         SceneManager.LoadScene("Scene1b");
+    }
+    public void SceneChange3()
+    {
+        SceneManager.LoadScene("SceneLose_JoeyRomance");
     }
 }
