@@ -132,6 +132,8 @@ public class Scene4bDialogue : MonoBehaviour
         }
         else if (primeInt == 10)
         {
+            ArtChar1a.SetActive(false);
+			ArtChar1e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -146,6 +148,8 @@ public class Scene4bDialogue : MonoBehaviour
         }
         else if (primeInt == 12)
         {
+            ArtChar1e.SetActive(false);
+			ArtChar1c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -153,6 +157,8 @@ public class Scene4bDialogue : MonoBehaviour
         }
         else if (primeInt == 13)
         {
+            ArtChar1c.SetActive(false);
+			ArtChar1a.SetActive(true);
             Char1name.text = "You";
             Char1speech.text = "...";
             Char2name.text = "";
@@ -161,7 +167,7 @@ public class Scene4bDialogue : MonoBehaviour
         else if (primeInt == 14)
         {
             ArtChar1a.SetActive(false);
-            ArtChar1c.SetActive(true);
+            ArtChar1e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -183,6 +189,8 @@ public class Scene4bDialogue : MonoBehaviour
         }
         else if (primeInt == 17)
         {
+            ArtChar1e.SetActive(false);
+            ArtChar1c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";

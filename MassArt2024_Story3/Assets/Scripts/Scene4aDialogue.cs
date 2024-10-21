@@ -104,6 +104,8 @@ public class Scene4aDialogue : MonoBehaviour
         }
         else if (primeInt == 6)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -118,6 +120,8 @@ public class Scene4aDialogue : MonoBehaviour
         }
 else if (primeInt == 8)
         {
+            ArtChar1e.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -126,7 +130,7 @@ else if (primeInt == 8)
 else if (primeInt == 9)
         {
             ArtChar1a.SetActive(false);
-            ArtChar1c.SetActive(true);
+            ArtChar1e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -134,7 +138,8 @@ else if (primeInt == 9)
         }
         else if (primeInt == 10)
         {
-			
+			ArtChar1e.SetActive(false);
+            ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -142,6 +147,8 @@ else if (primeInt == 9)
         }
   else if (primeInt == 11)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1c.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -163,6 +170,7 @@ else if (primeInt == 9)
         }
        else if (primeInt == 14)
         {
+            
             Char1name.text = "You";
             Char1speech.text = "Can I go on vacation?";
             Char2name.text = "";
@@ -171,7 +179,7 @@ else if (primeInt == 9)
        else if (primeInt == 15)
         {
             ArtChar1c.SetActive(false);
-            ArtChar1a.SetActive(true);
+            ArtChar1e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -200,7 +208,7 @@ else if (primeInt == 9)
         }
        else if (primeInt == 19)
         {
-            ArtChar1c.SetActive(false);
+            ArtChar1e.SetActive(false);
             ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -257,7 +265,8 @@ else if (primeInt == 9)
         }
         else if (primeInt == 31)
         {
-            
+            ArtChar1a.SetActive(false);
+			ArtChar1e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -297,6 +306,8 @@ else if (primeInt == 9)
         }
         else if (primeInt == 41)
         {	
+            ArtChar1a.SetActive(false);
+			ArtChar1e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -325,7 +336,8 @@ else if (primeInt == 9)
         }
         else if (primeInt == 45)
         {	
-            //ADD BLUSH SPRITE
+            ArtChar1e.SetActive(false);
+			ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -333,7 +345,8 @@ else if (primeInt == 9)
         }
         else if (primeInt == 46)
         {	
-            
+            ArtChar1d.SetActive(false);
+			ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -349,7 +362,8 @@ else if (primeInt == 9)
         }
         else if (primeInt == 48)
         {	
-            
+            ArtChar1a.SetActive(false);
+			ArtChar1d.SetActive(true);
             Char1name.text = "You";
             Char1speech.text = "I'm sure monsters go on vacation too~";
             Char2name.text = "";
@@ -365,7 +379,8 @@ else if (primeInt == 9)
         }
         else if (primeInt == 50)
         {	
-            
+            ArtChar1d.SetActive(false);
+			ArtChar1a.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -381,7 +396,8 @@ else if (primeInt == 9)
         }
         else if (primeInt == 52)
         {
-            //blush sprite
+            ArtChar1a.SetActive(false);
+			ArtChar1e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";

@@ -1368,6 +1368,8 @@ MonoBehaviour:
   ArtChar1a: {fileID: 983812917}
   ArtChar1b: {fileID: 817903723}
   ArtChar1c: {fileID: 1926795187}
+  ArtChar1d: {fileID: 1809826035}
+  ArtChar1e: {fileID: 211199906}
   ArtBG1: {fileID: 39016726}
   Choice1a: {fileID: 898985288417711179}
   Choice1b: {fileID: 665671181}
