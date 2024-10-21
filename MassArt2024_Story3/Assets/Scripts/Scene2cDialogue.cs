@@ -80,14 +80,14 @@ public class Scene2cDialogue : MonoBehaviour
         {
             DialogueDisplay.SetActive(true);
             Char1name.text = "You";
-            Char1speech.text = "(Nice park. Now, where is the suspect, Vanessa?)";
+            Char1speech.text = "[Nice park. Now, where is the suspect, Vanessa?]";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
             Char1name.text = "You";
-            Char1speech.text = "(Ah, just follow the crowd!)";
+            Char1speech.text = "[Ah, just follow the crowd!]";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -109,20 +109,37 @@ public class Scene2cDialogue : MonoBehaviour
         }
         else if (primeInt == 6)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
-            Char2name.text = "Vanessa";
-            Char2speech.text = "I sure do love music! Especially since I'm an artist ahaha!";
+            Char1name.text = "YOU";
+            Char1speech.text = "Wow this is cool!";
+            Char2name.text = "";
+            Char2speech.text = "";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 7)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Wow thanks, stranger!";
+            //gameHandler.AddPlayerStat(1);
+        }
+
+         else if (primeInt == 8)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "I love giving out items to my fans!";
+            //gameHandler.AddPlayerStat(1);
+        }
+        else if (primeInt == 8)
         {
             ArtChar1b.SetActive(false);
             ArtChar1a.SetActive(true);   
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "Who are your favorite bands?";
+            Char2speech.text = "Have you heard my new single yet?";
             //gameHandler.AddPlayerStat(1);
         }
         else if (primeInt == 8)
@@ -148,9 +165,29 @@ public class Scene2cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "Why do you want my autograph then?";
+            Char2speech.text = "No, that's not a song I created.";
         }
+
         else if (primeInt == 31)
+        {
+            ArtChar1c.SetActive(true);
+            ArtChar1b.SetActive(false);   
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "I don't even think that is a song that exists...";
+        }
+
+         else if (primeInt == 32)
+        {
+            ArtChar1c.SetActive(true);
+            ArtChar1b.SetActive(false);   
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "...";
+        }
+        else if (primeInt == 33)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -158,7 +195,7 @@ public class Scene2cDialogue : MonoBehaviour
             Char2speech.text = "Are you familiar with my music?";
         }
 
-        else if (primeInt == 32)
+        else if (primeInt == 34)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -179,7 +216,17 @@ public class Scene2cDialogue : MonoBehaviour
             Char2speech.text = "Oh joy!";
         }
 
-        else if (primeInt == 21)
+         else if (primeInt == 21)
+        {
+            ArtChar1b.SetActive(true);
+            ArtChar1a.SetActive(false);    
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Did you like it?";
+        }
+
+        else if (primeInt == 22)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -187,7 +234,7 @@ public class Scene2cDialogue : MonoBehaviour
             Char2speech.text = "Would you like to come to my concert this friday?";
         }
 
-        else if (primeInt == 22)
+        else if (primeInt == 23)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -197,7 +244,7 @@ public class Scene2cDialogue : MonoBehaviour
             allowSpace = false;
             NextScene2Button.SetActive(true);
         }
-          else if (primeInt == 23)
+          else if (primeInt == 24)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -233,9 +280,6 @@ public class Scene2cDialogue : MonoBehaviour
             Char1speech.text = "";
             Char2name.text = "Vanessa";
             Char2speech.text = "It should be spectacular!";
-            nextButton.SetActive(false);
-            allowSpace = false;
-
         }
  
         else if (primeInt == 43)
@@ -291,7 +335,7 @@ public class Scene2cDialogue : MonoBehaviour
     public void Choice1aFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "Oh, I love SO many bands!";
+        Char1speech.text = "Melody magic?";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 19;
@@ -303,7 +347,7 @@ public class Scene2cDialogue : MonoBehaviour
     public void Choice1bFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "Um, I don't listen to a lot of music...";
+        Char1speech.text = "Alien blues...?- uh I mean-";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 29;
@@ -315,7 +359,7 @@ public class Scene2cDialogue : MonoBehaviour
     public void Choice2aFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "Not really but I recognize you.";
+        Char1speech.text = "To be honest, not really. It was just a guess.";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 39;
@@ -327,7 +371,7 @@ public class Scene2cDialogue : MonoBehaviour
     public void Choice2bFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "I am familiar with your music(LIE).";
+        Char1speech.text = "Sure am! Haha..";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 49;
