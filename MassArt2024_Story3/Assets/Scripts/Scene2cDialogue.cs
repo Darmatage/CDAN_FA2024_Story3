@@ -32,7 +32,7 @@ public class Scene2cDialogue : MonoBehaviour
     public GameObject Choice3b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
-    public GameObject NextScene3Button;
+    //public GameObject NextScene3Button;
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
@@ -55,7 +55,7 @@ public class Scene2cDialogue : MonoBehaviour
         Choice3b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
-        NextScene3Button.SetActive(false);
+        //NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -105,7 +105,7 @@ public class Scene2cDialogue : MonoBehaviour
         }
         else if (primeInt == 5)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Yep! I think I'll take a poster too!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -113,7 +113,7 @@ public class Scene2cDialogue : MonoBehaviour
         }
         else if (primeInt == 6)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "This is cool!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -149,8 +149,8 @@ public class Scene2cDialogue : MonoBehaviour
         }
         else if (primeInt == 10)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "You";
+            Char1speech.text = "Umm... Was it...";
             Char2name.text = "";
             Char2speech.text = "";
             // Turn off the "Next" button, turn on "Choice" buttons
@@ -277,13 +277,13 @@ public class Scene2cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "Are you familiar with my music?";
+            Char2speech.text = "Are you even familiar with my music?";
         }
 
         else if (primeInt == 34)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "You";
+            Char1speech.text = "Oh! Uh...";
             Char2name.text = "";
             Char2speech.text = "";
             nextButton.SetActive(false);
@@ -358,8 +358,8 @@ public class Scene2cDialogue : MonoBehaviour
    
         else if (primeInt == 47)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "You";
+            Char1speech.text = "Lemme think about it...";
             Char2name.text = "";
             Char2speech.text = "";
             nextButton.SetActive(false);
@@ -400,7 +400,7 @@ public class Scene2cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "I  welcome you to join my concert this friday.";
+            Char2speech.text = "I welcome you to join my concert this friday.";
         }
 
         else if (primeInt == 62)
@@ -474,7 +474,7 @@ public class Scene2cDialogue : MonoBehaviour
     public void Choice1bFunct()
     {
         Char1name.text = "YOU";
-        Char1speech.text = "Alien-Song...?- uh I mean-[Crap.]";
+        Char1speech.text = "Alien-Song...?- Uh I mean- [Crap.]";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 29;
@@ -547,11 +547,5 @@ public class Scene2cDialogue : MonoBehaviour
         SceneManager.LoadScene("Scene1b");
     }
 
-//unused:
-    public void SceneChange3()
-    {
-        GameHandler.VanessaAbandoned = true;
-        SceneManager.LoadScene("Scene1b");
-    }
 
 }
