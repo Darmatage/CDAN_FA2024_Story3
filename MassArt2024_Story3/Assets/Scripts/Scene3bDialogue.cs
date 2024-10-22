@@ -44,6 +44,7 @@ public class Scene3bDialogue : MonoBehaviour
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject NextScene3Button;
+    public GameObject NextScene4Button;
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
@@ -76,6 +77,7 @@ public class Scene3bDialogue : MonoBehaviour
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         NextScene3Button.SetActive(false);
+        NextScene4Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -1613,7 +1615,7 @@ else if (primeInt == 103)
             Char2speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene2Button.SetActive(true);
+            NextScene4Button.SetActive(true);
 		}
 
 //after choice 6b
@@ -1852,7 +1854,7 @@ public void Choice6aFunct()
 
     public void SceneChange1()
     {
-        SceneManager.LoadScene("SceneLose");
+        SceneManager.LoadScene("SceneLose_LianhuaDeath");
     }
     public void SceneChange2()
     {
@@ -1862,5 +1864,10 @@ public void Choice6aFunct()
     public void SceneChange3()
     {
         SceneManager.LoadScene("SceneLose_LianhuaRomance");
+    }
+    public void SceneChange4()
+    {
+        GameHandler.LianhuaAbandoned = true;
+        SceneManager.LoadScene("Scene1b");
     }
 }
