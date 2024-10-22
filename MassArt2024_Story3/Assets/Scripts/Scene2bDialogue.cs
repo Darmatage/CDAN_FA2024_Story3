@@ -765,7 +765,7 @@ else if (primeInt == 153)
 		Char1name.text = "You";
 		Char1speech.text = "How did you know?!";
 		Char2name.text = "";
-		Char2name.text = "";
+		Char2speech.text = "";
 		primeInt = 109;
 		Choice4a.SetActive(false);
 		Choice4b.SetActive(false);
