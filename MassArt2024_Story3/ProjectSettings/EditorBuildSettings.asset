@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 9fb60b12178d74b409f93a95bc316fe2
   - enabled: 1
-    path: Assets/Scenes/SceneLose.unity
+    path: Assets/Scenes/SceneLose_VanessaDuet.unity
     guid: 31b582cf7c4ae479a8ae78e95c53900a
   - enabled: 1
     path: Assets/Scenes/SceneLose_LianhuaDeath.unity
