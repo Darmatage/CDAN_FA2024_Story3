@@ -772,7 +772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_text
-      value: Hair
+      value: Your hair
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1071,7 +1071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_text
-      value: Arrest
+      value: Arrest her!
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1294,7 +1294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_text
-      value: Sing With Me
+      value: Sing With Me!
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1446,7 +1446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_text
-      value: Spare
+      value: Spare her
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -1669,7 +1669,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2475011693650708096, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_text
-      value: Eye
+      value: Your eyes- er eye
       objectReference: {fileID: 0}
     - target: {fileID: 2725574981846966769, guid: 6a7ef40a4583843d98ca0cc5ca704698, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size

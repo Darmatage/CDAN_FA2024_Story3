@@ -136,7 +136,7 @@ public class Scene3cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "...were you not paying attention to my show?";
+            Char2speech.text = "...Were you not paying attention to my show?";
         }
         else if (primeInt == 21)
         {
@@ -246,8 +246,8 @@ public class Scene3cDialogue : MonoBehaviour
         }
          else if (primeInt == 43)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "You";
+            Char1speech.text = "You have the right to remain silent.";
             Char2name.text = "";
             Char2speech.text = "";
         // Turn off the "Next" button, turn on "Scene" button/s
@@ -313,7 +313,7 @@ public class Scene3cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "I know I come off as super confident , but I'm pretty actually insecure.";
+            Char2speech.text = "I know I come off as super confident, but I'm actually pretty insecure.";
          }
 
           else if (primeInt == 58)
@@ -357,7 +357,7 @@ public class Scene3cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "That can't be true I've only ever gotten made fun of for my eye. ";
+            Char2speech.text = "That can't be true! I've only ever gotten made fun of for my eye. ";
         }
 
          else if (primeInt == 82)
@@ -403,7 +403,7 @@ public class Scene3cDialogue : MonoBehaviour
             Char1name.text = "";
              Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "You must be trying to lower my gaurd!";
+            Char2speech.text = "You must be trying to lower my guard!";
         }
             else if (primeInt == 88)
         {
@@ -492,7 +492,7 @@ public class Scene3cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "Keep this between us but it actually takes 2 hours to perfect the look.";
+            Char2speech.text = "Keep this between us, but it actually takes me 2 hours to perfect this look.";
         }
             else if (primeInt == 102)
         {
@@ -523,7 +523,7 @@ public class Scene3cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "I hate it when people lie and call my eye pretty. I know it is hideous";
+            Char2speech.text = "I hate it when people lie and call my eye pretty. I know it is hideous.";
         }
 
     else if (primeInt == 106)
