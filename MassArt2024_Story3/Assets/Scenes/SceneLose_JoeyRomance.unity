@@ -921,7 +921,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: No more job for you
+  m_text: 'No more job for you!
+
+    ...but something better?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1259,7 +1261,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d5a70ee3e19e34cc38af700aa300ebb2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f879d5bd514b340f38fca5e2ad1e2110, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
