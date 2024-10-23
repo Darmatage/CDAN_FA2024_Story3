@@ -144,7 +144,7 @@ public class Scene2aDialogue : MonoBehaviour
         {
             ArtChar1h.SetActive(false);
             ArtChar1b.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Oh- your um- your...eyes fell...uh nevermind.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -172,7 +172,7 @@ public class Scene2aDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Joey";
-            Char2speech.text = "No worries man! As a janitor, after-hours freaky figures tend to be the ushe.";
+            Char2speech.text = "No worries man! As a janitor, after-hours freaky figures tend to be the usual.";
         }
         else if (primeInt == 11)
         {
@@ -291,7 +291,7 @@ public class Scene2aDialogue : MonoBehaviour
         }
         else if (primeInt == 32)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "...";
             Char2name.text = "";
             Char2speech.text = "";
@@ -307,7 +307,7 @@ public class Scene2aDialogue : MonoBehaviour
         }
         else if (primeInt == 34)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Right...Well. I wasn't sure if you'd remember me!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -600,7 +600,7 @@ else if (primeInt == 75)
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Joey";
-                Char2speech.text = "You know what, don't sweat it pro or no you'll have the best time bro.";
+                Char2speech.text = "You know what, don't sweat it! Pro or no you'll have the best time bro.";
 
 		}
 
@@ -636,7 +636,7 @@ else if (primeInt == 80)
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
     public void Choice1aFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "Uh...I'm actually just a little lost...";
         Char2name.text = "";
         Char2speech.text = "";
@@ -648,7 +648,7 @@ else if (primeInt == 80)
     }
     public void Choice1bFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "I was actually looking for you! \nYou're Joey right?";
         Char2name.text = "";
         Char2speech.text = "";
@@ -664,7 +664,7 @@ else if (primeInt == 80)
 
 	public void Choice2aFunt()
 	{ 
-		Char1name.text = "YOU";
+		Char1name.text = "You";
 		Char1speech.text = "I believe I gave you my phone number that night?";
 		Char2name.text = "";
 		Char2name.text = "";
@@ -676,7 +676,7 @@ else if (primeInt == 80)
 	}
 	public void Choice2bFunct()
 	{
-		Char1name.text = "YOU";
+		Char1name.text = "You";
 		Char1speech.text = "I had a really good time with you that night!";
 		Char2name.text = "";
 		Char2speech.text = "";
@@ -688,7 +688,7 @@ else if (primeInt == 80)
 	}
 public void Choice3Funct()
 	{
-		Char1name.text = "YOU";
+		Char1name.text = "You";
 		Char1speech.text = "Uhhh..Wait!!";
 		Char2name.text = "";
 		Char2speech.text = "";

@@ -74,14 +74,14 @@ public class Scene1Dialogue : MonoBehaviour
         {
             
             DialogueDisplay.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Whew. First day. I'm nervous.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "At least I won't have to hunt monsters on my first day!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -89,7 +89,7 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "You wanted to see me Boss?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -104,28 +104,28 @@ public class Scene1Dialogue : MonoBehaviour
         }
         else if (primeInt == 6)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Already?";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 7)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "I mean- if it's not presumptuous of me. I just started!";
             Char2name.text = "";
             Char2speech.text = "";
         }
 else if (primeInt == 8)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Shouldn't I be doing some grunt work or some training before taking on a case?";
             Char2name.text = "";
             Char2speech.text = "";
         }
 else if (primeInt == 9)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Maybe shadow someone even...?";
             Char2name.text = "";
             Char2speech.text = "";
@@ -180,7 +180,7 @@ else if (primeInt == 9)
         }
         else if (primeInt == 21)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Right... Yes ma'am. Sorry.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -198,7 +198,7 @@ else if (primeInt == 9)
         }
         else if (primeInt == 31)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Oh...right.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -249,7 +249,7 @@ else if (primeInt == 41)
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
     public void Choice1aFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "Uh...Great! Totally no pressure!";
         Char2name.text = "";
         Char2speech.text = "";
@@ -261,7 +261,7 @@ else if (primeInt == 41)
     }
     public void Choice1bFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "I won't let you down!";
         Char2name.text = "";
         Char2speech.text = "";
