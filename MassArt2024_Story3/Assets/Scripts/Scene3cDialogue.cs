@@ -33,6 +33,7 @@ public class Scene3cDialogue : MonoBehaviour
     public GameObject Choice3b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
+    public GameObject NextScene3Button;
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
@@ -104,7 +105,7 @@ public class Scene3cDialogue : MonoBehaviour
         
         else if (primeInt == 5)
         {
-            Char1name.text = "You";
+            Char1name.text = "YOU";
             Char1speech.text = "It was amazing!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -133,10 +134,11 @@ public class Scene3cDialogue : MonoBehaviour
         { 
            ArtChar1a.SetActive(false);
             ArtChar1c.SetActive(true);
+         GameHandler.VanessaLove -= 1;
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "...Were you not paying attention to my show?";
+            Char2speech.text = "...were you not paying attention to my show?";
         }
         else if (primeInt == 21)
         {
@@ -178,6 +180,7 @@ public class Scene3cDialogue : MonoBehaviour
  //after choice 1b       
         else if (primeInt == 30)
         {    
+        GameHandler.VanessaLove += 1;
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
@@ -221,6 +224,7 @@ public class Scene3cDialogue : MonoBehaviour
   // afte choice 2a      
          else if (primeInt == 40)
         {
+         GameHandler.VanessaLove -= 1;   
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
@@ -246,8 +250,8 @@ public class Scene3cDialogue : MonoBehaviour
         }
          else if (primeInt == 43)
         {
-            Char1name.text = "You";
-            Char1speech.text = "You have the right to remain silent!";
+            Char1name.text = "";
+            Char1speech.text = "";
             Char2name.text = "";
             Char2speech.text = "";
         // Turn off the "Next" button, turn on "Scene" button/s
@@ -289,6 +293,7 @@ public class Scene3cDialogue : MonoBehaviour
 
         else if (primeInt == 54)
         {
+         GameHandler.VanessaLove += 1;  
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
@@ -313,12 +318,12 @@ public class Scene3cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "I know I come off as super confident, but I'm actually pretty insecure.";
+            Char2speech.text = "I know I come off as super confident , but I'm pretty actually insecure.";
          }
 
           else if (primeInt == 58)
         {
-            Char1name.text = "You";
+            Char1name.text = "YOU";
             Char1speech.text = "Could've fooled me.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -357,7 +362,7 @@ public class Scene3cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "That can't be true! I've only ever gotten made fun of for my eye. ";
+            Char2speech.text = "That can't be true I've only ever gotten made fun of for my eye. ";
         }
 
          else if (primeInt == 82)
@@ -385,6 +390,7 @@ public class Scene3cDialogue : MonoBehaviour
 
         else if (primeInt == 85)
        {
+          GameHandler.VanessaLove -= 1; 
             Char1name.text = "";
              Char1speech.text = "";
             Char2name.text = "Vanessa";
@@ -403,7 +409,7 @@ public class Scene3cDialogue : MonoBehaviour
             Char1name.text = "";
              Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "You must be trying to lower my guard!";
+            Char2speech.text = "You must be trying to lower my gaurd!";
         }
             else if (primeInt == 88)
         {
@@ -465,8 +471,8 @@ public class Scene3cDialogue : MonoBehaviour
         }
      else if (primeInt == 96)
         {
-            Char1name.text = "You";
-            Char1speech.text = "You have the right to remain silent!";
+            Char1name.text = "";
+            Char1speech.text = "";
             Char2name.text = "";
             Char2speech.text = "";
             //hide next button
@@ -492,7 +498,7 @@ public class Scene3cDialogue : MonoBehaviour
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "Keep this between us, but it actually takes me 2 hours to perfect this look.";
+            Char2speech.text = "Keep this between us but it actually takes 2 hours to perfect the look.";
         }
             else if (primeInt == 102)
         {
@@ -545,6 +551,7 @@ public class Scene3cDialogue : MonoBehaviour
             allowSpace = false;
             NextScene1Button.SetActive(true);
             NextScene2Button.SetActive(true);
+            NextScene3Button.SetActive(true);
         }
 
         //Please do NOT delete this final bracket that ends the Next() function:
@@ -634,5 +641,11 @@ public class Scene3cDialogue : MonoBehaviour
     {
         GameHandler.VanessaArrested = true;
         SceneManager.LoadScene("Scene1b");
+    }
+
+    public void SceneChange3()
+    {
+        GameHandler.VanessaArrested = true;
+        SceneManager.LoadScene("SceneLose_VanessaDuet");
     }
 }
