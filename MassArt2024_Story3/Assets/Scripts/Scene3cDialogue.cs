@@ -247,7 +247,7 @@ public class Scene3cDialogue : MonoBehaviour
          else if (primeInt == 43)
         {
             Char1name.text = "You";
-            Char1speech.text = "You have the right to remain silent.";
+            Char1speech.text = "You have the right to remain silent!";
             Char2name.text = "";
             Char2speech.text = "";
         // Turn off the "Next" button, turn on "Scene" button/s
@@ -465,8 +465,8 @@ public class Scene3cDialogue : MonoBehaviour
         }
      else if (primeInt == 96)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "You";
+            Char1speech.text = "You have the right to remain silent!";
             Char2name.text = "";
             Char2speech.text = "";
             //hide next button
