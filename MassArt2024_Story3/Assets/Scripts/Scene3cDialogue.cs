@@ -104,7 +104,7 @@ public class Scene3cDialogue : MonoBehaviour
         
         else if (primeInt == 5)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "It was amazing!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -281,7 +281,7 @@ public class Scene3cDialogue : MonoBehaviour
         }
      else if (primeInt == 53)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "You're pretty I guess...";
             Char2name.text = "";
             Char2speech.text = "";
@@ -318,7 +318,7 @@ public class Scene3cDialogue : MonoBehaviour
 
           else if (primeInt == 58)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Could've fooled me.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -414,14 +414,14 @@ public class Scene3cDialogue : MonoBehaviour
         }
             else if (primeInt == 89)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "[Oh no what do I do?]";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 90)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "[She's going to kill me!]";
             Char2name.text = "";
             Char2speech.text = "";
@@ -429,14 +429,14 @@ public class Scene3cDialogue : MonoBehaviour
 
             else if (primeInt == 91)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "[I guess I have no choice to arrest her now...]";
             Char2name.text = "";
             Char2speech.text = "";
         }
      else if (primeInt == 92)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "[Hopefully I can forgive myself someday...]";
             Char2name.text = "";
             Char2speech.text = "";
@@ -496,7 +496,7 @@ public class Scene3cDialogue : MonoBehaviour
         }
             else if (primeInt == 102)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Haha well it looks great.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -553,7 +553,7 @@ public class Scene3cDialogue : MonoBehaviour
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
     public void Choice1aFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "Catching stars was great!";
         Char2name.text = "";
         Char2speech.text = "";
@@ -565,7 +565,7 @@ public class Scene3cDialogue : MonoBehaviour
     }
     public void Choice1bFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "Sing with me really resonated with me!";
         Char2name.text = "";
         Char2speech.text = "";
@@ -577,7 +577,7 @@ public class Scene3cDialogue : MonoBehaviour
     }
     public void Choice2aFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "You are coming with me, monster!";
         Char2name.text = "";
         Char2speech.text = "";
@@ -589,7 +589,7 @@ public class Scene3cDialogue : MonoBehaviour
     }
     public void Choice2bFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "Are you okay?";
         Char2name.text = "";
         Char2speech.text = "";
@@ -601,7 +601,7 @@ public class Scene3cDialogue : MonoBehaviour
     }
     public void Choice3aFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "I like the way you did your hair today.";
         Char2name.text = "";
         Char2speech.text = "";
@@ -613,7 +613,7 @@ public class Scene3cDialogue : MonoBehaviour
     }
  public void Choice3bFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "Your eye really brings out all your features.";
         Char2name.text = "";
         Char2speech.text = "";
