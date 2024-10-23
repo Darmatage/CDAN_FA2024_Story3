@@ -274,6 +274,8 @@ else if (primeInt == 24)
         }
 else if (primeInt == 25)
         {
+            ArtChar1b.SetActive(false);
+			ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -281,6 +283,8 @@ else if (primeInt == 25)
         }
 else if (primeInt == 26)
         {
+            ArtChar1d.SetActive(false);
+			ArtChar1b.SetActive(true);
             Char1name.text = "You";
             Char1speech.text = "What made you open a club?";
             Char2name.text = "";
@@ -384,7 +388,7 @@ else if (primeInt == 36)
  else if (primeInt == 40)
         {
             Char1name.text = "You";
-            Char1speech.text = "No more like a detective.";
+            Char1speech.text = "No, more like a detective.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -469,6 +473,8 @@ else if (primeInt == 36)
         }
         else if (primeInt == 58)
         {
+            ArtChar1a.SetActive(false);
+			ArtChar1e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -483,7 +489,7 @@ else if (primeInt == 36)
         }
         else if (primeInt == 60)
         {
-            ArtChar1a.SetActive(false);
+            ArtChar1e.SetActive(false);
 			ArtChar1f.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -762,7 +768,7 @@ else if (primeInt == 103)
         else if (primeInt == 112)
 		{
             ArtChar1a.SetActive(false);
-			ArtChar1b.SetActive(true);
+			ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -770,6 +776,8 @@ else if (primeInt == 103)
         }
         else if (primeInt == 113)
 		{
+            ArtChar1d.SetActive(false);
+			ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1150,6 +1158,8 @@ else if (primeInt == 103)
 		}
         else if (primeInt == 187)
 		{
+            ArtChar1b.SetActive(false);
+			ArtChar1e.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1171,6 +1181,8 @@ else if (primeInt == 103)
 		}
         else if (primeInt == 190)
 		{
+            ArtChar1e.SetActive(false);
+			ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1297,6 +1309,8 @@ else if (primeInt == 103)
 //after choice 4b
 		else if (primeInt == 220)
 		{
+            ArtChar1b.SetActive(false);
+			ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1318,6 +1332,8 @@ else if (primeInt == 103)
 		}
         else if (primeInt == 223)
 		{
+            ArtChar1d.SetActive(false);
+			ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1552,7 +1568,7 @@ else if (primeInt == 103)
         else if (primeInt == 261)
 		{
             Char1name.text = "You";
-            Char1speech.text = "Hm";
+            Char1speech.text = "Hm.";
             Char2name.text = "";
             Char2speech.text = "";
 		}
@@ -1565,6 +1581,8 @@ else if (primeInt == 103)
 		}
         else if (primeInt == 263)
 		{
+            ArtChar1b.SetActive(false);
+			ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1572,6 +1590,8 @@ else if (primeInt == 103)
 		}
         else if (primeInt == 264)
 		{
+            ArtChar1d.SetActive(false);
+			ArtChar1b.SetActive(true);
             Char1name.text = "You";
             Char1speech.text = "Consider this payback for putting me through the wringer.";
             Char2name.text = "";
@@ -1663,6 +1683,8 @@ else if (primeInt == 103)
 		}
         else if (primeInt == 286)
 		{
+            ArtChar1b.SetActive(false);
+			ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";

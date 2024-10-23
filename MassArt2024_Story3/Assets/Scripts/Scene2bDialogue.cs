@@ -449,7 +449,7 @@ else if (primeInt == 41)
 		else if (primeInt == 110)
 		{
             ArtChar1c.SetActive(false);
-			ArtChar1b.SetActive(true);
+			ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -457,6 +457,8 @@ else if (primeInt == 41)
         }
         else if (primeInt == 111)
 		{
+            ArtChar1d.SetActive(false);
+			ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -475,7 +477,7 @@ else if (primeInt == 41)
 		else if (primeInt == 120)
 		{
             ArtChar1c.SetActive(false);
-			ArtChar1b.SetActive(true);
+			ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -483,6 +485,8 @@ else if (primeInt == 41)
 		}
         else if (primeInt == 121)
 		{
+            ArtChar1d.SetActive(false);
+			ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -529,7 +533,7 @@ else if (primeInt == 132)
 else if (primeInt == 135)
         {
             Char1name.text = "You";
-            Char1speech.text = "Oh... Thank you";
+            Char1speech.text = "Oh... Thank you.";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -582,7 +586,7 @@ else if (primeInt == 144)
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
-            Char2speech.text = "You like me, don't you? /j";
+            Char2speech.text = "You like me, don't you?";
         }
 else if (primeInt == 145)
 		{
