@@ -639,13 +639,11 @@ public class Scene3cDialogue : MonoBehaviour
     }
     public void SceneChange2()
     {
-        GameHandler.VanessaArrested = true;
         SceneManager.LoadScene("Scene1b");
     }
 
     public void SceneChange3()
     {
-        GameHandler.VanessaArrested = true;
         SceneManager.LoadScene("SceneLose_VanessaDuet");
     }
 }
