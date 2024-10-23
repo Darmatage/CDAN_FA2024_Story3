@@ -186,7 +186,7 @@ public class Scene2cDialogue : MonoBehaviour
 
        else if (primeInt == 22)
         {  
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Yes. it was very...loud.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -324,7 +324,7 @@ public class Scene2cDialogue : MonoBehaviour
         else if (primeInt == 43)
         {
             
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Sure am!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -461,7 +461,7 @@ public class Scene2cDialogue : MonoBehaviour
     // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
     public void Choice1aFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "Melody Magic?";
         Char2name.text = "";
         Char2speech.text = "";
@@ -473,7 +473,7 @@ public class Scene2cDialogue : MonoBehaviour
     }
     public void Choice1bFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "Alien-Song...?- Uh I mean- [Crap.]";
         Char2name.text = "";
         Char2speech.text = "";
@@ -485,7 +485,7 @@ public class Scene2cDialogue : MonoBehaviour
     }
     public void Choice2aFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "To be honest, not really. It was just a guess.";
         Char2name.text = "";
         Char2speech.text = "";
@@ -497,7 +497,7 @@ public class Scene2cDialogue : MonoBehaviour
     }
     public void Choice2bFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "Sure am! Haha...";
         Char2name.text = "";
         Char2speech.text = "";
@@ -510,7 +510,7 @@ public class Scene2cDialogue : MonoBehaviour
 
      public void Choice3aFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "Who's weird? You're weird...";
         Char2name.text = "";
         Char2speech.text = "";
@@ -523,7 +523,7 @@ public class Scene2cDialogue : MonoBehaviour
 
     public void Choice3bFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "Yeah, I actually don't know your music. I'm sorry.";
         Char2name.text = "";
         Char2speech.text = "";
