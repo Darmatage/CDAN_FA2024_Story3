@@ -56,6 +56,7 @@ public class Scene3cDialogue : MonoBehaviour
         Choice3b.SetActive(false);
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
+        NextScene3Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -639,9 +640,10 @@ public class Scene3cDialogue : MonoBehaviour
     }
     public void SceneChange2()
     {
+        GameHandler.VanessaArrested = true;
         SceneManager.LoadScene("Scene1b");
     }
-
+        
     public void SceneChange3()
     {
         SceneManager.LoadScene("SceneLose_VanessaDuet");
