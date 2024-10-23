@@ -138,14 +138,14 @@ public class Scene1bDialogue : MonoBehaviour
         {
             
             DialogueDisplay.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Huh. OK. Three files, just as promised.";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Let's take a look.";
             Char2name.text = "";
             Char2speech.text = "";
