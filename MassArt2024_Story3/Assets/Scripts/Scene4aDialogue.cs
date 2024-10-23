@@ -74,14 +74,14 @@ public class Scene4aDialogue : MonoBehaviour
         {
             
             DialogueDisplay.SetActive(true);
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Alright! That's the last of 'em!!";
             Char2name.text = "";
             Char2speech.text = "";
         }
         else if (primeInt == 3)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Phew- Who knew hunting monsters would be so difficult.";
             Char2name.text = "";
             Char2speech.text = "";
@@ -89,7 +89,7 @@ public class Scene4aDialogue : MonoBehaviour
         }
         else if (primeInt == 4)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Maybe I can go on vacation after this...";
             Char2name.text = "";
             Char2speech.text = "";
@@ -113,7 +113,7 @@ public class Scene4aDialogue : MonoBehaviour
         }
         else if (primeInt == 7)
         {
-            Char1name.text = "YOU";
+            Char1name.text = "You";
             Char1speech.text = "Yep!";
             Char2name.text = "";
             Char2speech.text = "";
@@ -462,7 +462,7 @@ else if (primeInt == 61)
     }
     public void Choice1bFunct()
     {
-        Char1name.text = "YOU";
+        Char1name.text = "You";
         Char1speech.text = "What about you?";
         Char2name.text = "";
         Char2speech.text = "";
