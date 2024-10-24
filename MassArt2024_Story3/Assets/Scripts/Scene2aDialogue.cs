@@ -456,7 +456,7 @@ public class Scene2aDialogue : MonoBehaviour
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Joey";
-                Char2speech.text = "Still, hang out or something soemtime?";
+                Char2speech.text = "Still, hang out or something sometime?";
      
             }
 
