@@ -26,6 +26,8 @@ public class Scene3bDialogue : MonoBehaviour
     public GameObject ArtChar1e;
     public GameObject ArtChar1f;
 	public GameObject ArtChar1g;
+    public GameObject ArtChar1h;
+	public GameObject ArtChar1i;
 
     public GameObject ArtBG1;
     public GameObject Choice1a;
@@ -60,6 +62,8 @@ public class Scene3bDialogue : MonoBehaviour
 		ArtChar1e.SetActive(false);
 		ArtChar1f.SetActive(false);
 		ArtChar1g.SetActive(false);
+        ArtChar1h.SetActive(false);
+		ArtChar1i.SetActive(false);
 
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
@@ -1239,6 +1243,7 @@ else if (primeInt == 103)
 		}
         else if (primeInt == 198)
 		{
+            ArtChar1b.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "Ok...";
             Char2name.text = "";
@@ -1247,6 +1252,8 @@ else if (primeInt == 103)
         //Reveals his true form
         else if (primeInt == 199)
 		{
+            ArtChar1b.SetActive(true);
+            ArtChar1i.SetActive(true);
             Char1name.text = "You";
             Char1speech.text = "Oh my god...";
             Char2name.text = "";
@@ -1262,6 +1269,8 @@ else if (primeInt == 103)
 		{
             ArtChar1b.SetActive(false);
 			ArtChar1g.SetActive(true);
+            ArtChar1i.SetActive(false);
+			ArtChar1h.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1334,6 +1343,8 @@ else if (primeInt == 103)
 		{
             ArtChar1d.SetActive(false);
 			ArtChar1b.SetActive(true);
+            ArtChar1i.SetActive(false);
+			ArtChar1h.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1371,6 +1382,8 @@ else if (primeInt == 103)
 		{
             ArtChar1b.SetActive(false);
 			ArtChar1c.SetActive(true);
+            ArtChar1h.SetActive(false);
+			ArtChar1i.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1448,6 +1461,8 @@ else if (primeInt == 103)
 		{
             ArtChar1c.SetActive(false);
 			ArtChar1a.SetActive(true);
+            ArtChar1i.SetActive(false);
+			ArtChar1h.SetActive(true);
             Char1name.text = "You";
             Char1speech.text = "But you didn't do anything wrong...";
             Char2name.text = "";
@@ -1547,6 +1562,8 @@ else if (primeInt == 103)
 		{
             ArtChar1e.SetActive(false);
 			ArtChar1b.SetActive(true);
+            ArtChar1h.SetActive(false);
+			ArtChar1i.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1599,6 +1616,8 @@ else if (primeInt == 103)
 		}
         else if (primeInt == 265)
 		{
+            ArtChar1i.SetActive(false);
+			ArtChar1h.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1606,6 +1625,8 @@ else if (primeInt == 103)
 		}
         else if (primeInt == 266)
 		{
+            ArtChar1h.SetActive(false);
+			ArtChar1i.SetActive(true);
             Char1name.text = "You";
             Char1speech.text = "Haha.";
             Char2name.text = "";
@@ -1662,6 +1683,8 @@ else if (primeInt == 103)
 		}
         else if (primeInt == 283)
 		{
+            ArtChar1i.SetActive(false);
+			ArtChar1h.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1685,6 +1708,8 @@ else if (primeInt == 103)
 		{
             ArtChar1b.SetActive(false);
 			ArtChar1d.SetActive(true);
+            ArtChar1h.SetActive(false);
+			ArtChar1i.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1851,7 +1876,7 @@ public void Choice5aFunct()
 public void Choice6aFunct()
     {
         Char1name.text = "You";
-        Char1speech.text = "You said that already";
+        Char1speech.text = "You said that already.";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 259;
