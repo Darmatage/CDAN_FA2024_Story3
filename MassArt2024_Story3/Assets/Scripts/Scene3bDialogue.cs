@@ -28,6 +28,8 @@ public class Scene3bDialogue : MonoBehaviour
 	public GameObject ArtChar1g;
     public GameObject ArtChar1h;
 	public GameObject ArtChar1i;
+    public GameObject ArtChar1j;
+	public GameObject ArtChar1k;
 
     public GameObject ArtBG1;
     public GameObject Choice1a;
@@ -64,6 +66,8 @@ public class Scene3bDialogue : MonoBehaviour
 		ArtChar1g.SetActive(false);
         ArtChar1h.SetActive(false);
 		ArtChar1i.SetActive(false);
+        ArtChar1j.SetActive(false);
+		ArtChar1k.SetActive(false);
 
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
@@ -1254,6 +1258,7 @@ else if (primeInt == 103)
 		{
             ArtChar1b.SetActive(true);
             ArtChar1i.SetActive(true);
+            ArtChar1j.SetActive(true);
             Char1name.text = "You";
             Char1speech.text = "Oh my god...";
             Char2name.text = "";
@@ -1271,6 +1276,8 @@ else if (primeInt == 103)
 			ArtChar1g.SetActive(true);
             ArtChar1i.SetActive(false);
 			ArtChar1h.SetActive(true);
+            ArtChar1j.SetActive(false);
+			ArtChar1k.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1463,6 +1470,8 @@ else if (primeInt == 103)
 			ArtChar1a.SetActive(true);
             ArtChar1i.SetActive(false);
 			ArtChar1h.SetActive(true);
+            ArtChar1j.SetActive(false);
+			ArtChar1k.SetActive(true);
             Char1name.text = "You";
             Char1speech.text = "But you didn't do anything wrong...";
             Char2name.text = "";
@@ -1564,6 +1573,8 @@ else if (primeInt == 103)
 			ArtChar1b.SetActive(true);
             ArtChar1h.SetActive(false);
 			ArtChar1i.SetActive(true);
+            ArtChar1k.SetActive(false);
+			ArtChar1j.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";

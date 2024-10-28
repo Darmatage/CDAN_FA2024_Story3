@@ -26,6 +26,7 @@ public class Scene2bDialogue : MonoBehaviour
     public GameObject ArtChar1e;
     public GameObject ArtChar1f;
 	public GameObject ArtChar1g;
+    public GameObject ArtChar1h;
 
     public GameObject ArtBG1;
     public GameObject Choice1a;
@@ -54,6 +55,7 @@ public class Scene2bDialogue : MonoBehaviour
 		ArtChar1e.SetActive(false);
 		ArtChar1f.SetActive(false);
 		ArtChar1g.SetActive(false);
+        ArtChar1h.SetActive(false);
 
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
@@ -497,6 +499,7 @@ else if (primeInt == 41)
 //after both choices 4a/4b:
 	    else if (primeInt == 130)
         {
+            ArtChar1h.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -518,6 +521,7 @@ else if (primeInt == 132)
         }
         else if (primeInt == 133)
         {
+            ArtChar1h.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
