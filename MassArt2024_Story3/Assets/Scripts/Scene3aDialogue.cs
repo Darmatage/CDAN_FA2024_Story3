@@ -382,7 +382,7 @@ else if (primeInt == 9)
 else if (primeInt == 60)
         {	
             DialogueDisplay.SetActive(true);
-		    ArtBG2.SetActive(false);
+		    
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Joey";
@@ -407,6 +407,7 @@ else if (primeInt == 61)
 else if (primeInt == 70)
 
         {	
+            ArtBG2.SetActive(false);
             ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -455,6 +456,7 @@ else if (primeInt == 72)
  //after choice 2b
 else if (primeInt == 80)
         {	
+            ArtBG2.SetActive(false);
          ArtChar1a.SetActive(false);
          ArtChar1d.SetActive(true);
             Char1name.text = "";
@@ -864,7 +866,7 @@ else if (primeInt == 152)
 public void Choice2aFunct()
     {
         Char1name.text = "You";
-        Char1speech.text = "You're under arrest monster!";
+        Char1speech.text = "[click!] Ah ha! You're under arrest monster!";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 69;
