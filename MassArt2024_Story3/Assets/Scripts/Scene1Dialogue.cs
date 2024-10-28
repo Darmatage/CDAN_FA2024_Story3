@@ -216,21 +216,101 @@ else if (primeInt == 9)
             Char2name.text = "Boss";
             Char2speech.text = "Whatever.";
         }
-else if (primeInt == 41)
+
+       else if (primeInt == 41)
+        {
+            
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "Oh. One more thing.";
+        }
+
+        else if (primeInt == 42)
+        {
+            
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "To successfully arrest these monsters we need evidence. Hard evidence.";
+        }
+
+      else if (primeInt == 43)
+        {
+            
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "I'm handing you this high grade police camera.";
+        }
+//add image?
+
+      else if (primeInt == 44)
+        {
+            ArtChar1a.SetActive(false);
+            ArtChar1e.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "When the oppertunity arises...and it will-";
+        }
+        else if (primeInt == 45)
+        {
+            
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "You are to take a photo of these monsters capturing their true form.";
+        }
+        else if (primeInt == 46)
+        {
+            
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "Make sure it's the right time, and the photo isn't just a snap of their everyday look.";
+        }
+        else if (primeInt == 47)
+        {
+            
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "Most people are too oblivious to see the monster right before their eyes.";
+        }
+        else if (primeInt == 48)
+        {
+           ArtChar1e.SetActive(false);
+           ArtChar1c.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "Idiots...";
+        }
+        else if (primeInt == 49)
+        {
+           ArtChar1c.SetActive(false);
+           ArtChar1a.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Boss";
+            Char2speech.text = "Which is why we need hard evidence.";
+        }
+      else if (primeInt == 50)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
             Char2speech.text = "Here are your files.";
         }
-		else if (primeInt == 42)
+		else if (primeInt == 52)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
             Char2speech.text = "Choose one to start off with.";
         }
-		else if (primeInt == 43)
+		else if (primeInt == 53)
         {
             Char1name.text = "";
             Char1speech.text = "";
