@@ -23,6 +23,8 @@ public class Scene1Dialogue : MonoBehaviour
     public GameObject ArtChar1c;
     public GameObject ArtChar1d;
     public GameObject ArtChar1e;
+    public GameObject ArtChar1f;
+
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -41,6 +43,8 @@ public class Scene1Dialogue : MonoBehaviour
 		ArtChar1c.SetActive(false);
         ArtChar1d.SetActive(false);
         ArtChar1e.SetActive(false);
+        ArtChar1f.SetActive(false);
+
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -237,11 +241,11 @@ else if (primeInt == 9)
 
       else if (primeInt == 43)
         {
-            
+            ArtChar1f.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
-            Char2speech.text = "I'm handing you this high grade police camera.";
+            Char2speech.text = "I'm handing you this instant camera.";
         }
 //add image?
 
@@ -252,7 +256,7 @@ else if (primeInt == 9)
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
-            Char2speech.text = "When the oppertunity arises...and it will-";
+            Char2speech.text = "When the oppertunity arises...";
         }
         else if (primeInt == 45)
         {
@@ -260,7 +264,7 @@ else if (primeInt == 9)
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
-            Char2speech.text = "You are to take a photo of these monsters capturing their true form.";
+            Char2speech.text = "You are to take a photo of these monsters in their true form.";
         }
         else if (primeInt == 46)
         {
@@ -291,6 +295,7 @@ else if (primeInt == 9)
         {
            ArtChar1c.SetActive(false);
            ArtChar1a.SetActive(true);
+           ArtChar1f.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
@@ -303,14 +308,14 @@ else if (primeInt == 9)
             Char2name.text = "Boss";
             Char2speech.text = "Here are your files.";
         }
-		else if (primeInt == 52)
+		else if (primeInt == 51)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Boss";
             Char2speech.text = "Choose one to start off with.";
         }
-		else if (primeInt == 53)
+		else if (primeInt == 52)
         {
             Char1name.text = "";
             Char1speech.text = "";
