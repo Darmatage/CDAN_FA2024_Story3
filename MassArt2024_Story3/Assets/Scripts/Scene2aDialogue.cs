@@ -420,7 +420,7 @@ public class Scene2aDialogue : MonoBehaviour
         else if (primeInt == 90)
         { 
            Char1name.text = "You";
-           Char1speech.text = "[I've gotta loosen him up...]";
+           Char1speech.text = "[I've gotta loosen him up more...]";
            Char2name.text = "";
            Char2speech.text = "";
 
@@ -663,7 +663,8 @@ else if (primeInt == 80)
         //choice 0a
 else if (primeInt == 110)
 		{
-            
+            ArtChar1g.SetActive(false);
+            ArtChar1d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Joey";
@@ -691,7 +692,8 @@ else if (primeInt == 111)
 		}
          else if (primeInt == 113)
 		{
-            
+            ArtChar1d.SetActive(false);
+      
                 Char1name.text = "You";
                 Char1speech.text = "Wait!!";
                 Char2name.text = "";
@@ -794,7 +796,7 @@ public void Choice0aFunct()
 public void Choice0bFunct()
 	{
 		Char1name.text = "You";
-		Char1speech.text = "Now's not the right time- Maybe I should loosen him up more...";
+		Char1speech.text = "Now's not the right time-";
 		Char2name.text = "";
 		Char2speech.text = "";
 		primeInt = 89;
