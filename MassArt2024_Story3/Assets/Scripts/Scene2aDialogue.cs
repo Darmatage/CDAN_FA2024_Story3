@@ -235,9 +235,6 @@ public class Scene2aDialogue : MonoBehaviour
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true);
-              // Turn off the "Next" button, turn on "Scene" button/s
-            nextButton.SetActive(false);
-            allowSpace = false;
             Choice3.SetActive(true);
 
         }
