@@ -591,8 +591,8 @@ public class Scene2cDialogue : MonoBehaviour
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 79;
-        Choice3a.SetActive(false);
-        Choice3b.SetActive(false);
+        Choice4a.SetActive(false);
+        Choice4b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
@@ -605,8 +605,8 @@ public class Scene2cDialogue : MonoBehaviour
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 89;
-        Choice3a.SetActive(false);
-        Choice3b.SetActive(false);
+        Choice4a.SetActive(false);
+        Choice4b.SetActive(false);
         nextButton.SetActive(true);
         allowSpace = true;
     }
