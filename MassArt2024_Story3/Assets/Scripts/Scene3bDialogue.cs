@@ -990,7 +990,7 @@ else if (primeInt == 103)
     else if (primeInt == 151)
         {
             Char1name.text = "You";
-            Char1speech.text = "[This is my chance...]";
+            Char1speech.text = "[Should I surprise him? Maybe then he'll reveal his true form...]";
             Char2name.text = "";
             Char2speech.text = "";
             nextButton.SetActive(false);
@@ -1002,9 +1002,7 @@ else if (primeInt == 103)
 //after choice 3a
 		else if (primeInt == 160)
 		{
-            ArtChar1c.SetActive(false);
-            ArtChar1b.SetActive(false);
-			ArtChar1f.SetActive(true);
+           
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1013,20 +1011,41 @@ else if (primeInt == 103)
         else if (primeInt == 161)
 		{
             Char1name.text = "You";
-            Char1speech.text = "You are in violation of impersonating a human being. I'm taking you in.";
+            Char1speech.text = "...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 162)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "[Well that didn't work...]";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 163)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "[Guess I gotta commit to the arrest.]";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 164)
+		{
+            Char1name.text = "You";
+            Char1speech.text = "You're in violation of impersonating a human being! I'm taking you in.";
             Char2name.text = "";
             Char2speech.text = "";
 		}
-        else if (primeInt == 162)
+        else if (primeInt == 165)
 		{
             ArtChar1f.SetActive(false);
 			ArtChar1g.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
-            Char2speech.text = "You seem to be forgetting a major detail, <i>Detective.<i>";
+            Char2speech.text = "Tch. You seem to be forgetting a major detail, <i>Detective.<i>";
 		}
-        else if (primeInt == 163)
+        else if (primeInt == 166)
 		{
             Char1name.text = "";
             Char1speech.text = "";
@@ -1804,8 +1823,11 @@ public void Choice2aFunct()
 
 public void Choice3aFunct()
     {
+        ArtChar1c.SetActive(false);
+        ArtChar1b.SetActive(false);
+		ArtChar1f.SetActive(true);
         Char1name.text = "You";
-        Char1speech.text = "You're under arrest monster!!";
+        Char1speech.text = "Ah ha!!";
         Char2name.text = "";
         Char2speech.text = "";
         primeInt = 159;

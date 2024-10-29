@@ -796,7 +796,7 @@ public void Choice0aFunct()
 public void Choice0bFunct()
 	{
 		Char1name.text = "You";
-		Char1speech.text = "Now's not the right time-";
+		Char1speech.text = "[Now's not the right time-]";
 		Char2name.text = "";
 		Char2speech.text = "";
 		primeInt = 89;
