@@ -31,9 +31,12 @@ public class Scene3cDialogue : MonoBehaviour
     public GameObject Choice2b;
     public GameObject Choice3a;
     public GameObject Choice3b;
+    public GameObject Choice4a;
+    public GameObject Choice4b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject NextScene3Button;
+    public GameObject NextScene4Button;
     public GameObject nextButton;
     //public AudioSource audioSource1;
     private bool allowSpace = true;
@@ -57,6 +60,7 @@ public class Scene3cDialogue : MonoBehaviour
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         NextScene3Button.SetActive(false);
+        NextScene4Button.SetActive(false);
         nextButton.SetActive(true);
     }
 
@@ -284,7 +288,15 @@ public class Scene3cDialogue : MonoBehaviour
             Char2name.text = "Vanessa";
             Char2speech.text = "Why didn't you arrest me?";
         }
-     else if (primeInt == 53)
+    else if (primeInt == 53)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "ummm...";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+     
+     else if (primeInt == 54)
         {
             Char1name.text = "You";
             Char1speech.text = "You're pretty I guess...";
@@ -292,7 +304,7 @@ public class Scene3cDialogue : MonoBehaviour
             Char2speech.text = "";
         }
 
-        else if (primeInt == 54)
+        else if (primeInt == 55)
         {
          GameHandler.VanessaLove += 1;  
             Char1name.text = "";
@@ -300,36 +312,36 @@ public class Scene3cDialogue : MonoBehaviour
             Char2name.text = "Vanessa";
             Char2speech.text = "You think I'm pretty?";
         }
-        else if (primeInt == 55)
+        else if (primeInt == 56)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
             Char2speech.text = "No one has ever said that to me before...";
          }
-        else if (primeInt == 56)
+        else if (primeInt == 57)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
             Char2speech.text = "...";
          }
-         else if (primeInt == 57)
+         else if (primeInt == 58)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
-            Char2speech.text = "I know I come off as super confident , but I'm pretty actually insecure.";
+            Char2speech.text = "I know I come off as super confident, but I'm pretty actually insecure.";
          }
 
-          else if (primeInt == 58)
+          else if (primeInt == 59)
         {
             Char1name.text = "YOU";
             Char1speech.text = "Could've fooled me.";
             Char2name.text = "";
             Char2speech.text = "";
          }
-        else if (primeInt == 59)
+        else if (primeInt == 60)
         {
            
             Char1name.text = "";
@@ -337,13 +349,13 @@ public class Scene3cDialogue : MonoBehaviour
             Char2name.text = "Vanessa";
             Char2speech.text = "Haha yeah...";
         }
-        else if (primeInt == 60)
+        else if (primeInt == 61)
         {
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
             Char2speech.text = "What is pretty about me?";
-        nextButton.SetActive(false);
+            nextButton.SetActive(false);
             allowSpace = false;
             Choice3a.SetActive(true); // function Choice1aFunct()
             Choice3b.SetActive(true); // function Choice1bFunct()

@@ -30,8 +30,11 @@ public class Scene2cDialogue : MonoBehaviour
     public GameObject Choice2b;
     public GameObject Choice3a;
     public GameObject Choice3b;
+    public GameObject Choice4a;
+    public GameObject Choice4b;
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
+    public GameObject NextScene3Button;
     //public GameObject NextScene3Button;
     public GameObject nextButton;
     //public AudioSource audioSource1;
@@ -183,16 +186,63 @@ public class Scene2cDialogue : MonoBehaviour
             Char2name.text = "Vanessa";
             Char2speech.text = "Did you like it?";
         }
-
-       else if (primeInt == 22)
+        else if (primeInt == 22)
         {  
             Char1name.text = "You";
-            Char1speech.text = "Yes. it was very...loud.";
+            Char1speech.text = "err..";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Choice4a.SetActive(true); // function Choice1aFunct()
+            Choice4b.SetActive(true); // function Choice1bFunct()
+        }
+       
+       else if (primeInt == 80)
+        {    
+            Char1name.text = "You";
+            Char1speech.text = "You're coming with me, monster!";
             Char2name.text = "";
             Char2speech.text = "";
         }
 
-        else if (primeInt == 23)
+         else if (primeInt == 81)
+        {
+            ArtChar1b.SetActive(false);
+            ArtChar1d.SetActive(true);    
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Hey what gives!?";
+        }
+       else if (primeInt == 82)
+        {   
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "My eye- I mean, eyes are very sensitive you know!";
+        }
+
+         else if (primeInt == 83)
+        {    
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Vanessa";
+            Char2speech.text = "Security!!";
+            NextScene3Button.SetActive(true);
+
+        }
+      
+      
+      
+      
+       else if (primeInt == 90)
+        {  
+            Char1name.text = "You";
+            Char1speech.text = "It was very...loud.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+
+        else if (primeInt == 91)
         {  
             Char1name.text = "";
             Char1speech.text = "";
@@ -200,7 +250,7 @@ public class Scene2cDialogue : MonoBehaviour
             Char2speech.text = "I'm so glad you liked it!";
         }
 
-        else if (primeInt == 24)
+        else if (primeInt == 92)
         {  
             Char1name.text = "";
             Char1speech.text = "";
@@ -210,7 +260,7 @@ public class Scene2cDialogue : MonoBehaviour
 
 
        
-        else if (primeInt == 25)
+        else if (primeInt == 93)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -218,7 +268,7 @@ public class Scene2cDialogue : MonoBehaviour
             Char2speech.text = "Would you like to come to my concert this friday?";
         }
 
-        else if (primeInt == 26)
+        else if (primeInt == 94)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -229,7 +279,7 @@ public class Scene2cDialogue : MonoBehaviour
             NextScene1Button.SetActive(true);
             NextScene2Button.SetActive(true);
         }
-          else if (primeInt == 27)
+          else if (primeInt == 95)
         {
             Char1name.text = "";
             Char1speech.text = "";
@@ -534,6 +584,33 @@ public class Scene2cDialogue : MonoBehaviour
         allowSpace = true;
     }
 
+     public void Choice4aFunct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "Gotcha!!!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 79;
+        Choice3a.SetActive(false);
+        Choice3b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+
+
+     public void Choice4bFunct()
+    {
+        Char1name.text = "You";
+        Char1speech.text = "Yes!";
+        Char2name.text = "";
+        Char2speech.text = "";
+        primeInt = 89;
+        Choice3a.SetActive(false);
+        Choice3b.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+
     //go to concert
     public void SceneChange1()
     {
@@ -542,6 +619,13 @@ public class Scene2cDialogue : MonoBehaviour
 
     //abandon file
     public void SceneChange2()
+    {
+        GameHandler.VanessaAbandoned = true;
+        SceneManager.LoadScene("Scene1b");
+    }
+
+     //abandon file
+    public void SceneChange3()
     {
         GameHandler.VanessaAbandoned = true;
         SceneManager.LoadScene("Scene1b");
