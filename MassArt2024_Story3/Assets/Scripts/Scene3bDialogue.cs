@@ -30,6 +30,8 @@ public class Scene3bDialogue : MonoBehaviour
 	public GameObject ArtChar1i;
     public GameObject ArtChar1j;
 	public GameObject ArtChar1k;
+    public GameObject ArtChar1l;
+	public GameObject ArtChar1m;
 
     public GameObject ArtBG1;
     public GameObject Choice1a;
@@ -68,6 +70,8 @@ public class Scene3bDialogue : MonoBehaviour
 		ArtChar1i.SetActive(false);
         ArtChar1j.SetActive(false);
 		ArtChar1k.SetActive(false);
+        ArtChar1l.SetActive(false);
+		ArtChar1m.SetActive(false);
 
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
@@ -1017,6 +1021,7 @@ else if (primeInt == 103)
         }
         else if (primeInt == 162)
 		{
+            ArtChar1l.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "[Well that didn't work...]";
             Char2name.text = "";
@@ -1430,6 +1435,7 @@ else if (primeInt == 103)
 		}
         else if (primeInt == 231)
 		{
+            ArtChar1m.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "With me handcuffing you and all...";
             Char2name.text = "";
@@ -1826,6 +1832,7 @@ public void Choice3aFunct()
         ArtChar1c.SetActive(false);
         ArtChar1b.SetActive(false);
 		ArtChar1f.SetActive(true);
+        ArtChar1l.SetActive(true);
         Char1name.text = "You";
         Char1speech.text = "Ah ha!!";
         Char2name.text = "";
@@ -1881,6 +1888,7 @@ public void Choice4aFunct()
 
 public void Choice5aFunct()
     {
+        ArtChar1m.SetActive(true);
         Char1name.text = "You";
         Char1speech.text = "...";
         Char2name.text = "";
