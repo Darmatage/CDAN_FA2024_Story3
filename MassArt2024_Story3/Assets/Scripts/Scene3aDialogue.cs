@@ -25,6 +25,8 @@ public class Scene3aDialogue : MonoBehaviour
     public GameObject ArtChar1e;
     public GameObject ArtChar1f;
     public GameObject ArtChar1g;
+    public GameObject ArtChar1h;
+
     public GameObject ArtBG1;
     public GameObject ArtBG2;
     public GameObject Choice1a;
@@ -52,6 +54,8 @@ public class Scene3aDialogue : MonoBehaviour
         ArtChar1e.SetActive(false);
         ArtChar1f.SetActive(false);
         ArtChar1g.SetActive(false);
+        ArtChar1h.SetActive(false);
+
         ArtBG1.SetActive(true);
         ArtBG2.SetActive(false);
         Choice1a.SetActive(false);
@@ -407,6 +411,7 @@ else if (primeInt == 61)
 else if (primeInt == 70)
 
         {	
+            ArtChar1h.SetActive(false);
             ArtBG2.SetActive(false);
             ArtChar1d.SetActive(true);
             Char1name.text = "";
@@ -865,6 +870,7 @@ else if (primeInt == 152)
     }
 public void Choice2aFunct()
     {
+        ArtChar1h.SetActive(true);
         Char1name.text = "You";
         Char1speech.text = "[click!] Ah ha! You're under arrest monster!";
         Char2name.text = "";

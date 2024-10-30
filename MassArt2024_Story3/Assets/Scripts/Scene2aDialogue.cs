@@ -26,6 +26,8 @@ public class Scene2aDialogue : MonoBehaviour
     public GameObject ArtChar1f;
     public GameObject ArtChar1g;
     public GameObject ArtChar1h;
+    public GameObject ArtChar1i;
+
     //public GameObject ArtChar2;
     public GameObject ArtBG1;
     public GameObject Choice0a;
@@ -57,6 +59,8 @@ public class Scene2aDialogue : MonoBehaviour
         ArtChar1f.SetActive(false);
         ArtChar1g.SetActive(false);
         ArtChar1h.SetActive(false);
+        ArtChar1i.SetActive(false);
+
         ArtBG1.SetActive(true);
         Choice0a.SetActive(false);
         Choice0b.SetActive(false);
@@ -683,7 +687,7 @@ else if (primeInt == 111)
 
         else if (primeInt == 112)
 		{
-            
+            ArtChar1i.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Joey";
@@ -783,6 +787,7 @@ public void Choice3Funct()
 
 public void Choice0aFunct()
 	{
+        ArtChar1i.SetActive(true);
 		Char1name.text = "You";
 		Char1speech.text = "Ah ha! Got you now monster!!";
 		Char2name.text = "";
