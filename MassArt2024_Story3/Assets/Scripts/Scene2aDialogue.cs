@@ -37,6 +37,9 @@ public class Scene2aDialogue : MonoBehaviour
     public GameObject Choice2a;
     public GameObject Choice2b;
     public GameObject Choice3;
+
+    public GameObject Photoflash;
+
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
 	/*
@@ -69,6 +72,9 @@ public class Scene2aDialogue : MonoBehaviour
 		Choice2a.SetActive(false);
         Choice2b.SetActive(false);
         Choice3.SetActive(false);
+
+        Choice3.SetActive(false);
+
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
 		/*
@@ -667,6 +673,7 @@ else if (primeInt == 80)
         //choice 0a
 else if (primeInt == 110)
 		{
+            Photoflash.SetActive(false);
             ArtChar1g.SetActive(false);
             ArtChar1d.SetActive(true);
                 Char1name.text = "";
@@ -788,6 +795,8 @@ public void Choice3Funct()
 public void Choice0aFunct()
 	{
         ArtChar1i.SetActive(true);
+        StartCoroutine(FadeOut(Photoflash));
+        Photoflash.SetActive(true);
 		Char1name.text = "You";
 		Char1speech.text = "Ah ha! Got you now monster!!";
 		Char2name.text = "";
@@ -831,6 +840,29 @@ public void Choice0bFunct()
         SceneManager.LoadScene("Scene2b");
     }
 */
+
+IEnumerator FadeIn(GameObject fadeImage){
+                float alphaLevel = 0;
+                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel += 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+
+        IEnumerator FadeOut(GameObject fadeImage){
+                float alphaLevel = 1;
+                fadeImage.GetComponent<Image>().color = new Color(2.5f, 2.5f, 2.5f, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel -= 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(2.5f, 2.5f, 2.5f, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+
 
 }
 

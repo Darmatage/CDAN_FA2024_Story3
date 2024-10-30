@@ -43,6 +43,10 @@ public class Scene1bDialogue : MonoBehaviour
     public GameObject arrestedLianhuaLabel;
 	public GameObject arrestedVanessaLabel;
 
+    public GameObject arrestedJoeyMugshot;
+    public GameObject arrestedLianhuaMugshot;
+	public GameObject arrestedVanessaMugshot;
+
 	//display the EndGame Buttons:
 	public GameObject endPromotionButton;
     public GameObject endTerminationButton;
@@ -77,14 +81,32 @@ public class Scene1bDialogue : MonoBehaviour
 		else {investigateVanessa.SetActive(false);}
 
 	//arrested labels:
-		if(GameHandler.JoeyArrested == false){arrestedJoeyLabel.SetActive(false);}
-		else {arrestedJoeyLabel.SetActive(true);}
+		if(GameHandler.JoeyArrested == false){
+            arrestedJoeyLabel.SetActive(false);
+            arrestedJoeyMugshot.SetActive(false);
+            }
+		else {
+            arrestedJoeyLabel.SetActive(true);
+            arrestedJoeyMugshot.SetActive(true);
+        }
 
-		if(GameHandler.LianhuaArrested == false){arrestedLianhuaLabel.SetActive(false);}
-		else {arrestedLianhuaLabel.SetActive(true);}
+		if(GameHandler.LianhuaArrested == false){
+            arrestedLianhuaLabel.SetActive(false);
+            arrestedLianhuaMugshot.SetActive(false);
+            }
+		else {
+            arrestedLianhuaLabel.SetActive(true);
+            arrestedLianhuaMugshot.SetActive(true);
+        }
 
-		if(GameHandler.VanessaArrested == false){arrestedVanessaLabel.SetActive(false);}
-		else {arrestedVanessaLabel.SetActive(true);}
+		if(GameHandler.VanessaArrested == false){
+            arrestedVanessaLabel.SetActive(false);
+            arrestedVanessaMugshot.SetActive(false);
+            }
+		else {
+            arrestedVanessaLabel.SetActive(true);
+            arrestedVanessaMugshot.SetActive(true);
+            }
         
 	//End Game Buttons:
 		// if all paths finished:

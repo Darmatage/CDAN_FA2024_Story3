@@ -47,6 +47,8 @@ public class Scene3bDialogue : MonoBehaviour
     public GameObject Choice6a;
     public GameObject Choice6b;
 
+    public GameObject Photoflash;
+
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject NextScene3Button;
@@ -86,6 +88,9 @@ public class Scene3bDialogue : MonoBehaviour
         Choice5b.SetActive(false);
         Choice6a.SetActive(false);
         Choice6b.SetActive(false);
+
+        Photoflash.SetActive(false);
+
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         NextScene3Button.SetActive(false);
@@ -1006,7 +1011,7 @@ else if (primeInt == 103)
 //after choice 3a
 		else if (primeInt == 160)
 		{
-           
+           Photoflash.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Lianhua";
@@ -1428,6 +1433,7 @@ else if (primeInt == 103)
 //after choice 5a
 		else if (primeInt == 230)
 		{
+            Photoflash.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "You really didn't put up a fight.";
             Char2name.text = "";
@@ -1833,6 +1839,8 @@ public void Choice3aFunct()
         ArtChar1b.SetActive(false);
 		ArtChar1f.SetActive(true);
         ArtChar1l.SetActive(true);
+        StartCoroutine(FadeOut(Photoflash));
+        Photoflash.SetActive(true);
         Char1name.text = "You";
         Char1speech.text = "Ah ha!!";
         Char2name.text = "";
@@ -1889,6 +1897,8 @@ public void Choice4aFunct()
 public void Choice5aFunct()
     {
         ArtChar1m.SetActive(true);
+        StartCoroutine(FadeOut(Photoflash));
+        Photoflash.SetActive(true);
         Char1name.text = "You";
         Char1speech.text = "...";
         Char2name.text = "";
@@ -1958,4 +1968,29 @@ public void Choice6aFunct()
         GameHandler.LianhuaAbandoned = true;
         SceneManager.LoadScene("Scene1b");
     }
+
+
+ IEnumerator FadeIn(GameObject fadeImage){
+                float alphaLevel = 0;
+                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel += 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+
+        IEnumerator FadeOut(GameObject fadeImage){
+                float alphaLevel = 1;
+                fadeImage.GetComponent<Image>().color = new Color(2.5f, 2.5f, 2.5f, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel -= 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(2.5f, 2.5f, 2.5f, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+
+
 }
