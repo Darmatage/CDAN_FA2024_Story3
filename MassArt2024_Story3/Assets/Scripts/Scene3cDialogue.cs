@@ -24,6 +24,8 @@ public class Scene3cDialogue : MonoBehaviour
     public GameObject ArtChar1d;
     public GameObject ArtChar1e;
     public GameObject ArtChar1f;
+    public GameObject ArtChar1h;
+
     public GameObject ArtBG1;
     public GameObject Choice1a;
     public GameObject Choice1b;
@@ -33,6 +35,9 @@ public class Scene3cDialogue : MonoBehaviour
     public GameObject Choice3b;
     public GameObject Choice4a;
     public GameObject Choice4b;
+
+    public GameObject Photoflash;
+
     public GameObject NextScene1Button;
     public GameObject NextScene2Button;
     public GameObject NextScene3Button;
@@ -50,6 +55,8 @@ public class Scene3cDialogue : MonoBehaviour
 		ArtChar1d.SetActive(false);
 		ArtChar1e.SetActive(false);
         ArtChar1f.SetActive(false);
+        ArtChar1h.SetActive(false);
+
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -57,6 +64,9 @@ public class Scene3cDialogue : MonoBehaviour
         Choice2b.SetActive(false);
         Choice3a.SetActive(false);
         Choice3b.SetActive(false);
+
+        Photoflash.SetActive(false);
+
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
         NextScene3Button.SetActive(false);
@@ -229,6 +239,7 @@ public class Scene3cDialogue : MonoBehaviour
   // afte choice 2a      
          else if (primeInt == 40)
         {
+            Photoflash.SetActive(false);
          GameHandler.VanessaLove -= 1;   
             Char1name.text = "";
             Char1speech.text = "";
@@ -241,6 +252,7 @@ public class Scene3cDialogue : MonoBehaviour
 
         else if (primeInt == 41)
         {
+            ArtChar1h.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Vanessa";
@@ -597,6 +609,9 @@ public class Scene3cDialogue : MonoBehaviour
     }
     public void Choice2aFunct()
     {
+        ArtChar1h.SetActive(true);
+        StartCoroutine(FadeOut(Photoflash));
+        Photoflash.SetActive(true);
         Char1name.text = "You";
         Char1speech.text = "You are coming with me, monster!";
         Char2name.text = "";
@@ -660,4 +675,28 @@ public class Scene3cDialogue : MonoBehaviour
     {
         SceneManager.LoadScene("SceneLose_VanessaDuet");
     }
+
+IEnumerator FadeIn(GameObject fadeImage){
+                float alphaLevel = 0;
+                fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel += 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(1, 1, 1, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+
+        IEnumerator FadeOut(GameObject fadeImage){
+                float alphaLevel = 1;
+                fadeImage.GetComponent<Image>().color = new Color(2.5f, 2.5f, 2.5f, alphaLevel);
+                for(int i = 0; i < 100; i++){
+                        alphaLevel -= 0.01f;
+                        yield return null;
+                        fadeImage.GetComponent<Image>().color = new Color(2.5f, 2.5f, 2.5f, alphaLevel);
+                        Debug.Log("Alpha is: " + alphaLevel);
+                }
+        }
+
+
 }

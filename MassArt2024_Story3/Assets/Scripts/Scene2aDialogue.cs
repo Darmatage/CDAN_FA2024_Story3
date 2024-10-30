@@ -73,7 +73,7 @@ public class Scene2aDialogue : MonoBehaviour
         Choice2b.SetActive(false);
         Choice3.SetActive(false);
 
-        Choice3.SetActive(false);
+        Photoflash.SetActive(false);
 
         NextScene1Button.SetActive(false);
         NextScene2Button.SetActive(false);
